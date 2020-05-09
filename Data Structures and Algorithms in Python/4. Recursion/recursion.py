@@ -5,6 +5,7 @@ def factorial(n):
     else:
         return n * factorial(n-1)
 #print(factorial(10))
+# Time complexity: O(n)
 
 #4.1.2 English ruler
 
@@ -31,6 +32,7 @@ def draw_ruler(num_inches, major_length):
         draw_line(major_length, str(j))   # draw inch j line and label
             
 #draw_ruler(1, 3)
+# draw_interval(c) yields (2^c -1) lines of output
 
 # binary search
 
@@ -48,3 +50,94 @@ def binary_search(data, target, low, high):
             return binary_search(data, target, low, mid - 1)
         else:
             return binary_search(data, target, mid + 1, high)
+# Time complexity = O(log n) f fvcccdd444444dd4cdxxxxxxde33
+        
+# 4.1.4 File systems
+import os
+
+def disk_usage(path):
+    # Return the number of bytes used by a file/folder and any descendents
+    total = os.path.getsize(path)
+    if os.path.isdir(path):
+        for filename in os.listdir(path):
+            childpath = os.path.join(path.filename)
+            total += disk_usage(childpath)
+    print('{0:<7}'.format(total), path)
+    return total
+# O(n)
+
+# 4.3 drawback of recursion algorithm
+
+# 4-6 
+def unique3(S, start, stop):
+    # Return true if there are no duplicate elements in slice S[start: stop]
+    if stop - start < 1: return True
+    elif unique3(S, start, stop - 1): return False
+    elif unique3(S, start + 1, stop): return False
+    else: return S[start] != S[stop - 1]
+    
+# bad recursion, O(2^n)
+
+# 4-7 bad Fibonacci
+def bad_fibonacci(n):
+    if n <=1:
+        return n
+    else:
+        return bad_fibonacci(n-2) + bad_fibonacci(n-1)
+    
+# 4-8 linear recursion improvement
+def good_fibonacci(n):
+    if n <=1:
+        return (n,0)
+    else:
+        (a, b) = good_fibonacci(n-1)
+        return (a+b, a)
+# O(n)
+
+# 4.4.1 Linear recursion
+#4-7
+def linear_sum(S, n):
+    # return the first n numbers of sequence S
+    if n == 0:
+        return 0
+    else:
+        return linear_sum(S, n-1) + S[n-1]
+    
+# 4-8
+def reverse(S, start, stop):
+    # Reverse the element in implicit slice S[start:stop]
+    if start < stop -  1:
+        S[start], S[stop - 1] = S[stop - 1], S[start]
+        reverse(S, start + 1, stop - 1)
+    # O(m)
+    
+# 4-9 power function
+def power(x,n):
+    if n==0:
+        return 1
+    else:
+        return x* power(x, n-1) 
+# O(n)
+
+# 4-10 improvement
+def power2(x, n):
+    if n == 0:
+        return 1
+    else:
+        partial = power(x, n//2)
+        result = partial * partial
+        if n % 2 ==1:
+            result *= x
+        return result
+    
+# 4.4.2 Binary recursion
+def binary_sum(S, start, stop):
+    # return the sum of the numbers in implicit slice S[start: stop]
+    if start >= stop:
+        return 0
+    elif start == stop - 1:
+        return S[start]
+    else:
+        mid = (start + stop)//2
+        return binary_sum(S, start, mid) + binary_sum(S, mid, stop)
+# O(n) 
