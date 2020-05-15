@@ -55,6 +55,18 @@ class DynamicArray:
             self._A[j] = self._A[j-1]
         self._A[k] = value
         self._n += 1
+        
+    def remove(self, value):
+        # Remove first occurrence of value (or raise ValueError)
+        # we do not consider shrinking the dynamic array in this version
+        for k in range(self._n):
+            if self._A[k] == value:
+                for j in range(k, self._n - 1):
+                    self._A[j] = self._A[j + 1]
+                self._A[self._n - 1] = None
+                self._n -= 1
+                return
+        raise ValueError('value not found')
     
     
 # Amortization analysis
@@ -68,3 +80,13 @@ def compute_average(n):
     return (end - start) / n
 
 #print(compute_average(100))
+
+# Construct new list
+n = 10
+squares = []
+for k in range(1, n + 1):
+    squares.append(k*k)
+
+# list comprehension
+squares = [k*k for k in range(1, n + 1)]
+
