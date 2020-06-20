@@ -13,4 +13,5 @@ public class Solution {
             b = _b;
         }
         return a;
+    }
 }
