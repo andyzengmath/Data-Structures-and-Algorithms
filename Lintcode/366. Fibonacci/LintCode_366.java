@@ -4,6 +4,8 @@ public class LintCode_366 {
      * @return: an integer f(n)
      */
     public int fibonacci(int n) {
+        // time complexity: O(n)
+        // space complexity: O(1)
         int first = 0;
         int second = 1;
 
