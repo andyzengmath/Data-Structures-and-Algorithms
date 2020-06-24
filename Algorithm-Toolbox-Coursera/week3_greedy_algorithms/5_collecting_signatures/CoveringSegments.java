@@ -3,11 +3,29 @@ import java.util.*;
 public class CoveringSegments {
 
     private static int[] optimalPoints(Segment[] segments) {
-        //write your code here
-        int[] points = new int[2 * segments.length];
+        int n = segments.length;
+        int[] points = new int[segments.length];
+        int numOfSeg = 1;
+        currEnd = segments[0].end;
+
+        Array.sort(segments, new Comparator<Segment>() {
+            public int compare(Segment s1, Segment s2) {
+                return Integer.compare(s1.end, s2.end);
+            }
+        });
+
+        for (int i = 1; i < n ; i ++) {
+            
+            currStart = segment[i].start;
+            if (currEnd < currStart) {
+                numOfSeg += 1;
+                points.add(currEnd);
+                numOfSeg +=1;
+            }
+        }
+        int[] totalPoints = new int[j];
         for (int i = 0; i < segments.length; i++) {
-            points[2 * i] = segments[i].start;
-            points[2 * i + 1] = segments[i].end;
+            totalPoints[i] = points[i];
         }
         return points;
     }
