@@ -5,16 +5,19 @@ public class CoveringSegments {
 
     private static int[] optimalPoints(Segment[] segments) {
         int n = segments.length;
-        int[] points = new int[segments.length];
-        int numOfSeg = 1;
-        int currEnd = segments[0].end;
-        points[0] = segments[0].start;
-
+        
         Arrays.sort(segments, new Comparator<Segment>() {
             public int compare(Segment s1, Segment s2) {
                 return Integer.compare(s1.end, s2.end);
             }
         });
+
+        int[] points = new int[segments.length];
+        int numOfSeg = 1;
+        int currEnd = segments[0].end;
+        points[0] = segments[0].start;
+
+        
 
         for (int i = 1; i < n ; i ++) {
             
