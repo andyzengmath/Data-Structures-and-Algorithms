@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.Arrays; 
 
 public class CoveringSegments {
 
@@ -6,9 +7,10 @@ public class CoveringSegments {
         int n = segments.length;
         int[] points = new int[segments.length];
         int numOfSeg = 1;
-        currEnd = segments[0].end;
+        int currEnd = segments[0].end;
+        points[0] = segments[0].start;
 
-        Array.sort(segments, new Comparator<Segment>() {
+        Arrays.sort(segments, new Comparator<Segment>() {
             public int compare(Segment s1, Segment s2) {
                 return Integer.compare(s1.end, s2.end);
             }
@@ -16,18 +18,25 @@ public class CoveringSegments {
 
         for (int i = 1; i < n ; i ++) {
             
-            currStart = segment[i].start;
+            int currStart = segments[i].start;
             if (currEnd < currStart) {
+                
+                points[numOfSeg-1] = currEnd;
                 numOfSeg += 1;
-                points.add(currEnd);
-                numOfSeg +=1;
+                currEnd = segments[i].end;
+                
+                
             }
+           
         }
-        int[] totalPoints = new int[j];
-        for (int i = 0; i < segments.length; i++) {
+        points[numOfSeg - 1] = currEnd;
+
+        int[] totalPoints = new int[numOfSeg];
+        for (int i = 0; i < numOfSeg; i++) {
             totalPoints[i] = points[i];
         }
-        return points;
+
+        return totalPoints;
     }
 
     private static class Segment {
