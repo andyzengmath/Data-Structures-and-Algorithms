@@ -3,7 +3,47 @@ import java.io.*;
 
 public class CarFueling {
     static int computeMinRefills(int dist, int tank, int[] stops) {
-        return -1;
+        int numStops = stops.length;
+        int numFills = 0;
+        int currFill = 0;
+        int lastFillValue = 0;
+
+
+        if (dist- stops[numStops -1] > tank) {
+            return -1;
+        }
+
+        while (currFill < numStops) {
+            int lastFill = currFill;
+
+            while (currFill < numStops && stops[currFill] - lastFillValue <= tank) {
+                currFill = currFill + 1;
+            }
+            //System.out.print(currFill);
+            //System.out.println("fill");
+
+            if (currFill == lastFill) {
+                return -1;
+            }
+            if (dist - lastFillValue <= tank) {
+                return numFills;
+            }
+
+            if (currFill <= numStops) {
+                lastFillValue = stops[currFill - 1];
+                numFills += 1;
+                }
+                
+            }
+          
+
+        if (dist - lastFillValue > tank) {
+            return -1;
+        } else {
+            return numFills;
+        }
+        
+    
     }
 
     public static void main(String[] args) {
