@@ -27,4 +27,5 @@ public class LintCode_451 {
         }
 
         return dummy.next;
+    }    
 }
