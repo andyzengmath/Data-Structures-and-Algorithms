@@ -9,8 +9,32 @@ public class MajorityElement {
         if (left + 1 == right) {
             return a[left];
         }
-        //write your code here
-        return -1;
+
+        int leftMajority = getMajorityElement(a, left, (left + right - 1) / 2 + 1);
+        int rightMajority = getMajorityElement(a, (left + right - 1) /2 + 1, right);
+
+        int leftCount = 0;
+        int rightCount = 0;
+
+        for (int i = left; i < right; i ++) {
+            if (a[i] == leftMajority) {
+                leftCount ++;
+            }
+        }
+
+        for (int i = left; i < right; i ++) {
+            if (a[i] == rightMajority) {
+                rightCount ++;
+            }
+        }
+
+        if (leftCount >= (right - left) / 2 + 1) {
+            return leftMajority;
+        } else if (rightCount >= (right - left) / 2 + 1) {
+            return rightMajority;
+        } else {
+            return -1;
+        }
     }
 
     public static void main(String[] args) {
