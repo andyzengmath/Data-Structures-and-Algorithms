@@ -20,14 +20,19 @@ public class LintCode_36 {
         
 
         ListNode pre2 = pre;
-        for (int i = m; i < m + n; i++) {
-            
+        ListNode temp = pre;
+        pre = pre.next;
+        ListNode pre3 = pre;
+        curr = curr.next;
+        for (int i = m; i < m + n - 1; i++) {
+            temp = curr.next;
+            curr.next = pre;
+            pre = curr;
+            curr = temp;
         }
+        pre2.next = curr;
+        pre.next = pre3;
 
         return dummy.next;
-        
-
-
-
     }
 }
