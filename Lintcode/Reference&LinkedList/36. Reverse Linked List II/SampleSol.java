@@ -25,8 +25,10 @@ public class SampleSol {
             }
             ListNode temp = postnNode.next;
             postnNode.next = nNode;
-            nNode = temp;
+            nNode = postnNode;
+            postnNode = temp;
         }
+        
         mNode.next = postnNode;
         premNode.next = nNode;
 

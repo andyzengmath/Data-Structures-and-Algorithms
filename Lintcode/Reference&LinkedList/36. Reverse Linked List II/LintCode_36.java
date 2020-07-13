@@ -7,36 +7,39 @@ public class LintCode_36 {
      */
     public ListNode reverseBetween(ListNode head, int m, int n) {
         // write your code here
+        if (m >= n || head == null) {
+            return head;
+        }
+
         ListNode dummy = new ListNode(0);
         dummy.next = head;
-        ListNode pre = dummy;
-        
         ListNode curr = dummy;
         
-        for (int i = 0; i < m; i++) {
+        
+        
+        for (int i = 1; i < m; i++) {
             if (curr == null) {
                 return null;
             }
-            pre = curr;
             curr = curr.next;
         }
-        
 
-        ListNode pre2 = pre;
-        ListNode temp = pre;
-        pre = pre.next;
-        ListNode pre3 = pre;
-        curr = curr.next;
-        for (int i = m; i < m + n - 1; i++) {
-            if (curr == null) {
+        ListNode preNode = curr;
+        ListNode firstNode = curr.next;
+        ListNode secondNode = firstNode;
+        ListNode secondNext = firstNode.next;
+
+        for (int i = m; i < 1; i++) {
+            if (secondNext == null) {
                 return null;
-            temp = curr.next;
-            curr.next = pre;
-            pre = curr;
-            curr = temp;
+            }
+            ListNode temp = secondNext.next;
+            secondNext.next = secondNode;
+            secondNode = secondNext;
+            secondNext = temp;
         }
-        pre2.next = curr;
-        pre.next = pre3;
+        firstNode.next = secondNext;
+        preNode.next = secondNode;
 
         return dummy.next;
     }
