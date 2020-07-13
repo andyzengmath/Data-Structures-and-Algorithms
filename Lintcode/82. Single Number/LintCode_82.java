@@ -6,5 +6,10 @@ public class LintCode_82 {
      */
     public int singleNumber(int[] A) {
         // write your code here
+        int result = 0;
+        for (int i = 0; i < A.length; i ++) {
+            result = result^A[i];
+        }
+        return result;
     }
 }

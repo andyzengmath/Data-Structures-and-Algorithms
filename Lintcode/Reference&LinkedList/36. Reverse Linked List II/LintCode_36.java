@@ -14,6 +14,9 @@ public class LintCode_36 {
         ListNode curr = dummy;
         
         for (int i = 0; i < m; i++) {
+            if (curr == null) {
+                return null;
+            }
             pre = curr;
             curr = curr.next;
         }
@@ -25,6 +28,8 @@ public class LintCode_36 {
         ListNode pre3 = pre;
         curr = curr.next;
         for (int i = m; i < m + n - 1; i++) {
+            if (curr == null) {
+                return null;
             temp = curr.next;
             curr.next = pre;
             pre = curr;
