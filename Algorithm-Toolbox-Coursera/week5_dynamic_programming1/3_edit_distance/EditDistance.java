@@ -11,7 +11,7 @@ class EditDistance {
     }
 
     for (int i = 0; i <= m; i ++){
-      matrix[m][0] = i;
+      matrix[i][0] = i;
     }
 
 
