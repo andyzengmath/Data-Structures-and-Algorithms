@@ -16,17 +16,28 @@ public class PrimitiveCalculator {
             minSequence[i] = Integer.MAX_VALUE;
             int num1 = Integer.MAX_VALUE, num2 = Integer.MAX_VALUE, num3 = Integer.MAX_VALUE;
             num1 = minSequence[i-1] + 1;
-            predecessor[i] = i - 1;
-            if (i % 2 == 0) {
-                num2 = minSequence[fun2(i)] + 1;
-                predecessor[i] = i / 2;
-            }
+            
+            
 
             if (i % 3 == 0) {
                 num3 = minSequence[fun3(i)] + 1;
+               
+            }
+
+            if (i % 2 == 0) {
+                num2 = minSequence[fun2(i)] + 1;
+                
+            }
+
+            int minNum = Math.min(num1, Math.min(num2, num3));
+
+            if (minNum == num1) {
+                predecessor[i] = i - 1;
+            } else if (minNum == num2) {
+                predecessor[i] = i / 2;
+            } else {
                 predecessor[i] = i / 3;
             }
-            int minNum = Math.min(num1, Math.min(num2, num3));
 
             minSequence[i] = minNum;
         }
