@@ -46,6 +46,7 @@ public class PrimitiveCalculator {
             sequence.add(i);
         }
         Collections.reverse(sequence);
+        
            
         
         return sequence;
