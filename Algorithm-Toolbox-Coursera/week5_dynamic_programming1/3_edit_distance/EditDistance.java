@@ -15,8 +15,8 @@ class EditDistance {
     }
 
 
-    for (int j = 1; j <= n; j ++){
-      for (int i = 1; i <= m; i ++) {
+    for (int i = 1; i <= m; i ++){
+      for (int j = 1; j <= n; j ++) {
         int insertion = matrix[i][j - 1] + 1;
         int deletion = matrix[i - 1][j] + 1;
         int mismatch = matrix[i - 1][j - 1] + 1;
