@@ -3,8 +3,38 @@ import java.util.*;
 public class LCS3 {
 
     private static int lcs3(int[] a, int[] b, int[] c) {
-        //Write your code here
-        return Math.min(Math.min(a.length, b.length), c.length);
+        int s1 = a.length;
+        int s2 = b.length;
+        int s3 = c.length;
+
+        int[][][] matrix = new int[s1][s2][s3];
+
+        for (int i = 0; i <= s1; i ++) {
+            matrix[i][0][0] = 0;
+        }
+
+        for (int j = 0; j <= s2; j ++) {
+            matrix[0][j][0] = 0;
+        }
+        
+        for (int k = 0; k <= s3; k ++) {
+            matrix[0][0][k] = 0;
+        }  
+
+        for (int i = 1; i <= s1; i++) {
+            for (int j = 1; j <= s2; j++) {
+                for (int k = 1; k <= s3; k++) {
+                    if (a[i-1] == b[j-1] && a[i-1] == c[k-1]) {
+                        matrix[i][j][k] = matrix[i-1][j-1][k-1] + 1;
+                    } else {
+                        matrix[i][j][k] = Math.max(matrix[i][j][k-1], Math.max(matrix[i-1][j][k], matrix[i][j-1][k]));
+                    }
+                }
+                
+            }
+        }
+
+        return matrix[s1][s2][s3];
     }
 
     public static void main(String[] args) {
