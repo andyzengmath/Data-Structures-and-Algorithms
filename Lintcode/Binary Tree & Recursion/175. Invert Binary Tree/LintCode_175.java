@@ -5,5 +5,19 @@ public class LintCode_175 {
      */
     public void invertBinaryTree(TreeNode root) {
         // write your code here
+        if 
+
+        TreeNode temp = new TreeNode();
+        temp = root.left;
+        root.left = root.right;
+        root.right = temp;
+
+        if (root.left != null) {
+            invertBinaryTree(root.left);
+        }
+        
+        if (root.right != null) {
+            invertBinaryTree(root.right);
+        }
     }
 }
