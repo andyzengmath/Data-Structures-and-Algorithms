@@ -20,6 +20,6 @@ public class LintCode_175 {
         
         if (root.right != null) {
             invertBinaryTree(root.right);
-        }
+        } // don't need to test whether left or right child is null
     }
 }
