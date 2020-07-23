@@ -5,7 +5,9 @@ public class LintCode_175 {
      */
     public void invertBinaryTree(TreeNode root) {
         // write your code here
-        if 
+        if (root == null){
+            return;
+        }
 
         TreeNode temp = new TreeNode();
         temp = root.left;
