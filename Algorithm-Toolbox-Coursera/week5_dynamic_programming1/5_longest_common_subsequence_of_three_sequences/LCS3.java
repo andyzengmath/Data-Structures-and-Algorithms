@@ -7,7 +7,7 @@ public class LCS3 {
         int s2 = b.length;
         int s3 = c.length;
 
-        int[][][] matrix = new int[s1][s2][s3];
+        int[][][] matrix = new int[s1 + 1][s2 + 1][s3 + 1];
 
         for (int i = 0; i <= s1; i ++) {
             matrix[i][0][0] = 0;
