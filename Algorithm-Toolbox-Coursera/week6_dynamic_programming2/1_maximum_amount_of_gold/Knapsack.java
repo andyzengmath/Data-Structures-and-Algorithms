@@ -4,7 +4,7 @@ public class Knapsack {
     static int optimalWeight(int W, int[] w) {
         //write you code here
         int n = w.length;
-        int[][] matrix = new int[W + 1][n + 1];
+        int[][] value = new int[W + 1][n + 1];
 
         for (int i = 0; i <= W; i ++) {
           value[i][0] = 0;
@@ -15,10 +15,10 @@ public class Knapsack {
       }
       
       for (int i = 1; i <= n; i++) {
-        for (int j = 1; j <= M; j++) {
+        for (int j = 1; j <= W; j++) {
             value[j][i] = value[j][i-1];
             if (w[i - 1] <= j) {
-                int val = value[j - w[i - 1]][i-1] + w_i;
+                int val = value[j - w[i - 1]][i-1] + w[i-1];
                 if (value[j][i] < val) {
                     value[j][i] = val;
                 }
@@ -27,7 +27,7 @@ public class Knapsack {
         }
     
 
-    return matrix[W][n];
+    return value[W][n];
     }
 
     public static void main(String[] args) {
