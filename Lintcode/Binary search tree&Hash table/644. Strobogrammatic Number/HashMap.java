@@ -11,8 +11,12 @@ public class HashMap {
         int j = num.length() - 1;
         while (i <= j) {
             if (!map.containsKey(num.charAt(i)) || map.get(num.charAt(i)) != num.charAt(j)) {
-                
+                return false;
             }
+            i++;
+        j++;
         }
+        return true;
     }
+    
 }
