@@ -12,8 +12,8 @@ public class LintCode_56 {
         int[] result = {0, 0};
         for (int i = 0; i < numbers.length; i++) {
             if (map.get(numbers[i]) != null){
-                int[] result = {map.get(numbers[i]), i};
-                return result;
+                int[] res = {map.get(numbers[i]), i};
+                return res;
             }
             map.put(target - numbers[i], i);
         }
