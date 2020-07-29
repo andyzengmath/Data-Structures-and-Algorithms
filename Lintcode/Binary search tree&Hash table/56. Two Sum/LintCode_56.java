@@ -7,6 +7,16 @@ public class LintCode_56 {
      * or O(n) Space, O(n) Time
      */
     public int[] twoSum(int[] numbers, int target) {
-        // write your code here
+        // write your code here】
+        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+        int[] result = {0, 0};
+        for (int i = 0; i < numbers.length; i++) {
+            if (map.get(numbers[i]) != null){
+                int[] result = {map.get(numbers[i]), i};
+                return result;
+            }
+            map.put(target - numbers[i], i);
+        }
+        return result;
     }
 }
