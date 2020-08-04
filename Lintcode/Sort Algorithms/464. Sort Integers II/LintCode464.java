@@ -13,7 +13,7 @@ public class LintCode464 {
         } else {
             int pIndex = A.length / 2;
             int loc = partition(A, pIndex);
-            sortIntegers2(Arrays.copyOfRange(A, 0, loc));
+            sortIntegers2(Arrays.copyOfRange(A, 0, loc - 1));
             sortIntegers2(Arrays.copyOfRange(A, loc + 1, A.length));
         }
     }
