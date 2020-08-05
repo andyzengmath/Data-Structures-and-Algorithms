@@ -1,6 +1,6 @@
 public class quickSort {
     public void sortIntegers2(int[] A) {
-        quickSort(A, 0, A.length - 1);
+        quicksort(A, 0, A.length - 1);
 
     }
     
@@ -15,21 +15,28 @@ public class quickSort {
         int pivot = num[mid];
 
         while (left <= right) {
-            if (num[left] <= pivot) {
+            while (left <= right && num[left] < pivot) {
                 left = left + 1;
-            } else {
-                swap(A, left, right);
+            } 
+            while (left <= right && num[right] > pivot) {
                 right = right - 1;
+            }
+
+            if (left <= right) {
+                swap(num, left, right);
+                right = right - 1;
+                left = left + 1;
             }
             
         }
-        swap(A, left, hi);
+        
+        
         quicksort(num, start, right);
         quicksort(num, left, end);
     }
     
 
-    private void swap(int[] num, int a, int b) {
+    public static void swap(int[] num, int a, int b) {
         int temp = num[a];
         num[a] = num[b];
         num[b] = temp;
