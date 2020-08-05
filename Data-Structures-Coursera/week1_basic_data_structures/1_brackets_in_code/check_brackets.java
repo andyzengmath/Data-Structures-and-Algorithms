@@ -41,11 +41,15 @@ class check_brackets {
             if (next == ')' || next == ']' || next == '}') {
                 // Process closing bracket, write your code here
                 if (opening_brackets_stack.isEmpty()) {
-                    System.out.print(position);
+                    int pos = position + 1;
+                    System.out.print(pos);
+                    return;
                 } else {
                     Bracket top = opening_brackets_stack.pop();
                     if (!top.Match(next)) {
-                        System.out.print(position);
+                        int pos = position + 1;
+                        System.out.print(pos);
+                        return;
                     } 
                 }
             }
@@ -55,7 +59,7 @@ class check_brackets {
         if (opening_brackets_stack.isEmpty()) {
             System.out.println("Success");
         } else {
-            int pos = opening_brackets_stack.pop().position;
+            int pos = opening_brackets_stack.pop().position + 1;
             System.out.print(pos);
         }
     }
