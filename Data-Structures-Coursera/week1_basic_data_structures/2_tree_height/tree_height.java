@@ -31,18 +31,73 @@ public class tree_height {
 			for (int i = 0; i < n; i++) {
 				parent[i] = in.nextInt();
 			}
+
+			Node[] nodes = new Node[n];
+			for (int i = 0; i < n; i++) {
+				nodes[i] = new Node();
+			}
+
+			for (int childIndex = 0; childIndex < n; childIndex ++) {
+				int parentIndex = parent[childIndex];
+				if (parentIndex == -1) {
+					root = childIndex;
+				} else {
+					nodes[parentIndex].addChild(nodes[childIndex]);
+				}
+			}
+
 		}
 
 		int computeHeight() {
-                        // Replace this code with a faster implementation
-			int maxHeight = 0;
-			for (int vertex = 0; vertex < n; vertex++) {
-				int height = 0;
-				for (int i = vertex; i != -1; i = parent[i])
-					height++;
-				maxHeight = Math.max(maxHeight, height);
+            // Replace this code with a faster implementation
+			// int maxHeight = 0;
+			// for (int vertex = 0; vertex < n; vertex++) {
+			// 	int height = 0;
+			// 	for (int i = vertex; i != -1; i = parent[i])
+			// 		height++;
+			// 	maxHeight = Math.max(maxHeight, height);
+			// }
+			// return maxHeight;
+
+			Queue<Node> list = new LinkedList<Node>();
+			list.add(notes.root);
+			Node node = new Node();
+			
+			while (!list.isEmpty()) {
+				node = list.remove();
+				if (!node.children.isEmpty()) {
+					for (Node e: node.children) {
+						list.add(e);
+					}
+				}
 			}
-			return maxHeight;
+
+			int index = 0;
+			for (int i = 0; i < n; i++) {
+				if (nodes[i].equals(node)) {
+					index = i;
+					break;
+				}
+			}
+
+			int height = 1;
+			while (parent[index] != -1) {
+				height ++;
+				index = parent[index];
+			}
+
+			return height;
+		}
+
+		public class Node{
+			List<Node> children;
+			Node() {
+				children = new ArrayList<Node>();
+			}
+
+			void addChild(Node child){
+				children.add(child);
+			}
 		}
 	}
 
