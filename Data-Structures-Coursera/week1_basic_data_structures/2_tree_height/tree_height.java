@@ -23,6 +23,8 @@ public class tree_height {
 	public class TreeHeight {
 		int n;
 		int parent[];
+		int root;
+		Node[] nodes;
 		
 		void read() throws IOException {
 			FastScanner in = new FastScanner();
@@ -32,7 +34,7 @@ public class tree_height {
 				parent[i] = in.nextInt();
 			}
 
-			Node[] nodes = new Node[n];
+			nodes = new Node[n];
 			for (int i = 0; i < n; i++) {
 				nodes[i] = new Node();
 			}
@@ -60,7 +62,7 @@ public class tree_height {
 			// return maxHeight;
 
 			Queue<Node> list = new LinkedList<Node>();
-			list.add(notes.root);
+			list.add(nodes[root]);
 			Node node = new Node();
 			
 			while (!list.isEmpty()) {
