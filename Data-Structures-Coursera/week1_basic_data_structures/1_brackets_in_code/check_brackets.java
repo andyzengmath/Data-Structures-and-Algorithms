@@ -35,13 +35,28 @@ class check_brackets {
 
             if (next == '(' || next == '[' || next == '{') {
                 // Process opening bracket, write your code here
+                opening_brackets_stack.push(new Bracket(next, position));
             }
 
             if (next == ')' || next == ']' || next == '}') {
                 // Process closing bracket, write your code here
+                if (opening_brackets_stack.isEmpty()) {
+                    System.out.print(position);
+                } else {
+                    Bracket top = opening_brackets_stack.pop();
+                    if (!top.Match(next)) {
+                        System.out.print(position);
+                    } 
+                }
             }
         }
 
         // Printing answer, write your code here
+        if (opening_brackets_stack.isEmpty()) {
+            System.out.println("Success");
+        } else {
+            int pos = opening_brackets_stack.pop().position;
+            System.out.print(pos);
+        }
     }
 }
