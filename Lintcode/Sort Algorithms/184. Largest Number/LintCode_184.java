@@ -15,7 +15,7 @@ public class LintCode_184 {
     public String largestNumber(int[] nums) {
         // write your code here
         int n = nums.length;
-        String[] str new String[n];
+        String[] str = new String[n];
         for (int i = 0; i < n; i++) {
             str[i] = String.valueOf(nums[i]);
         }
