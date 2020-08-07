@@ -16,7 +16,7 @@ public class LintCode_139 {
     }
     public int[] subarraySumClosest(int[] nums) {
         // write your code here
-        int result = new int[2];
+        int[] result = new int[2];
         if (nums == null || nums.length <= 1) {
             return result;
         }
@@ -29,15 +29,15 @@ public class LintCode_139 {
             sums[i] = new Pair(prev + nums[i-1], i);
             prev = sums[i].sum;
         }
-
-        Arrays.sort(sums, new Comparator<pair>() {
+        
+        Arrays.sort(sums, new Comparator<Pair>() {
             public int compare(Pair a, Pair b) {
                 return a.sum - b.sum;
             }
         });
         int answer = Integer.MAX_VALUE;
 
-        for (int i; i <= len; i++) {
+        for (int i = 1; i <= len; i++) {
             if (answer > sums[i].sum - sums[i-1].sum) {
                 answer = sums[i].sum - sums[i-1].sum;
                 int[] temp = new int[]{sums[i].index - 1, sums[i -1].index - 1};
