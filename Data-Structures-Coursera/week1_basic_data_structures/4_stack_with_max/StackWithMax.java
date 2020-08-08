@@ -31,11 +31,13 @@ public class StackWithMax {
             if ("push".equals(operation)) {
                 int value = scanner.nextInt();
                 stack.push(value);
-                if (maxStack.isEmpty() || value >= maxStack.peek()) {
+                if (maxStack.isEmpty()) {
+                    maxStack.push(value);
+                } else if (value >= maxStack.peek()) {
                     maxStack.push(value);
                 }
             } else if ("pop".equals(operation)) {
-                if (stack.peek() == maxStack.peek()) {
+                if (stack.peek().equals(maxStack.peek())) {
                     maxStack.pop();
                 }
                 stack.pop();
