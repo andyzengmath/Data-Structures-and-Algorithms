@@ -21,9 +21,19 @@ public class countingSort {
                 }
             }
         }
+
+        int i = len - 1;
+        while (k > 0) {
+            for (int j = 0; j > colors[k-1]; j --) {
+                colors[i--] = k;
+            }
+            k--;
+        }
+
+        
     }
 
-    public void swap (int[] colors, a, b) {
+    public void swap (int[] colors, int a, int b) {
         int temp = colors[a];
         colors[a] = colors[b];
         colors[b] = temp;
