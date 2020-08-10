@@ -9,7 +9,7 @@ def max_sliding_window_naive(sequence, m):
     queue = Queue()
     maximums = []
     for i in range(m):
-        queue.append(sequence[i])
+        queue.Enqueue(sequence[i])
     maximums.append(queue.Max())
     
     for i in range(m, len(sequence)):
@@ -24,14 +24,13 @@ class Stack():
         self.__stack = []
         self.max_stack = []
     
-    def Push(self, item) {
+    def Push(self, item): 
         if (len(self.max_stack) > 0):
             if (item >= self.max_stack[-1]):
                 self.max_stack.append(item)
         else:
             self.max_stack.append(item)
         self.__stack.append(item)
-    }
     
     def Pop(self):
         if (self.max_stack[-1] == self.__stack[-1]):
@@ -47,20 +46,21 @@ class Stack():
 
 class Queue():
     def __init__(self):
-        self.in = Stack()
-        self.out = Stack()
+        self.inbox = Stack()
+        self.outbox = Stack()
     
     def Enqueue(self, item):
-        self.in.Push(item)
+        self.inbox.Push(item)
         
     def Dequeue(self):
-        if self.out.is_empty():
-            while self.in.is_empty() is False:
-                item = self.in.Pop()
-                self.out.Push(item)
+        if self.outbox.is_empty():
+            while self.inbox.is_empty() is False:
+                item = self.inbox.Pop()
+                self.outbox.Push(item)
+        self.outbox.Pop()
     
     def Max(self):
-        in_max = self.in.Max(); out_max = self.out.max()
+        in_max = self.inbox.Max(); out_max = self.outbox.Max()
         if in_max is not None and out_max is not None:
             return max(in_max, out_max)
         elif in_max is not None:
