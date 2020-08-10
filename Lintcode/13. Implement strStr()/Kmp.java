@@ -1,4 +1,5 @@
 public class Kmp {
+    // https://www.zhihu.com/question/21923021/answer/281346746
     public int strStr(String source, String target) {
         if (target.length() == 0) {
             return 0;
@@ -29,7 +30,7 @@ public class Kmp {
         int a = -1, b = 0;
         next[0] = -1;
         while (b < p.length - 1) {
-            if (a = -1 || p[a] = p[b]) {
+            if (a = -1 || p[a] == p[b]) {
                 a++;
                 b++;
                 next[b] = a;
