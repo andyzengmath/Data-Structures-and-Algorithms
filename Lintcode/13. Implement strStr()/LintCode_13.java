@@ -10,13 +10,11 @@ public class LintCode_13 {
         if (target.equals("")) {
             return 0;
         }
-        for (int i = 0; i < source.length(); i++) {
-            for (int j = i; j < source.length(); j++) {
-                String str = source.substring(i, j + 1);
-                if (str.equals(target)) {
-                    return i;
-                }
-            }
+        for (int i = 0; i <= source.length() - target.length(); i++) {
+            String str = source.substring(i, i + target.length());
+            if (str.equals(target)) {
+            return i;
+            }    
         }
         
         return -1;
