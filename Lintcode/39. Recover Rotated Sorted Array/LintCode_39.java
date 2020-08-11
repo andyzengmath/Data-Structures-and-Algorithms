@@ -20,10 +20,10 @@ public class LintCode_39 {
             return;
         }
 
-        for (int i = cur + 1; i < len; i ++) {
+        for (int i = cur + 1; i <= len; i ++) {
             int val = nums.get(i);
             nums.remove(i);
             nums.add(i - cur - 1, val);
-        }
+        }// quite slow
     }
 }
