@@ -10,25 +10,29 @@ public class LintCode_28 {
         if (matrix == null || matrix.length == 0) {
             return false;
         }
+        if(matrix[0] == null || matrix[0].length == 0){
+            return false;
+        }
+        
         int n = matrix.length, m = matrix[0].length;
         int left = 0, right = n * m - 1;
 
-        if (target < matrix[0][0] || target > matrix[n][m]) {
+        if (target < matrix[0][0] || target > matrix[n - 1][m - 1]) {
             return false;
         }
         
         while (left < right) {
             int mid = (left + right) / 2;
-            if (matrix[m / mid][m % mid] == target) {
+            if (matrix[mid / m][mid % m] == target) {
                 return true;
-            } else if (matrix[m / mid][m % mid] > target) {
+            } else if (matrix[mid / m][mid % m] > target) {
                 right = mid;
             } else {
                 left = mid;
             }
         }
 
-        if (matrix[left / mid][left % mid] == target) {
+        if (matrix[left / m][left % m] == target) {
             return true;
         }
         return false;
