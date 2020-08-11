@@ -23,6 +23,27 @@ public class LintCode_22 {
     // @return a list of integer
     public List<Integer> flatten(List<NestedInteger> nestedList) {
         // Write your code here
+        List<Integer> result = new ArrayList<Integer>();
+        Stack<List<NestedInteger>> stack = new Stack<>();
+        List<NestedInteger> temp = nestedList;
+
+        while (temp.size() > 0 || stack.size() > 0) {
+            if (temp.size() == 0) {
+                temp = stack.pop();
+            }
+            NestedInteger item = temp.remove(0);
+            if (item.isInteger()) {
+                result.add(item.getInteger());
+            } else {
+                if (temp.size() > 0) {
+                    stack.push(temp);
+                };
+                temp = item.getList();
+            }
+        }
+
+        return result;
+
         
     }
 }
