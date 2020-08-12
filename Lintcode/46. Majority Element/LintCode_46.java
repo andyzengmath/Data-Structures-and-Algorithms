@@ -6,5 +6,23 @@ public class LintCode_46 {
      */
     public int majorityNumber(List<Integer> nums) {
         // write your code here
+        //Boyer–Moore majority vote algorithm
+        int curMajor = 0;
+        int count = 0; 
+
+        for (Integer i: nums) {
+            if (count == 0) {
+                curMajor = num;
+            }
+
+            if (num == currentMajor) {
+                count++;
+            } else {
+                count--;
+            }
+        }
+
+        return curMajor;
+
     }
 }
