@@ -12,10 +12,10 @@ public class LintCode_46 {
 
         for (Integer i: nums) {
             if (count == 0) {
-                curMajor = num;
+                curMajor = i;
             }
 
-            if (num == currentMajor) {
+            if (i == curMajor) {
                 count++;
             } else {
                 count--;
