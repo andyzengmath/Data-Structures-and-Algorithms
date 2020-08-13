@@ -5,6 +5,10 @@ public class LintCode_53 {
      */
     public String reverseWords(String s) {
         // write your code here
+        if (s.length() == 0 || s == null) {
+            return " ";
+        }
+        
         Stack<String> stack = new Stack<>();
         String temp = "";
         for (int i = 0; i < s.length(); i++) {
