@@ -8,6 +8,16 @@ public class LintCode_64 {
      */
     public void mergeSortedArray(int[] A, int m, int[] B, int n) {
         // write your code here
+        if (B == null || B.length == 0) {
+            return;
+        }
+
+        if (A == null || A.length == 0) {
+            for (int j = 0; j < B.length; j++) {
+                A[j] = B[j];
+            }
+        }
+        
         int a = m - 1, b = n - 1, i = m + n - 1;
 
         while (a >= 0 && b >= 0) {
@@ -23,6 +33,6 @@ public class LintCode_64 {
         }
         while (b >= 0) {
             A[i--] = B[b--];
-
+        }
     }
 }
