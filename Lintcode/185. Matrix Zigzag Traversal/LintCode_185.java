@@ -5,7 +5,7 @@ public class LintCode_185 {
      */
     public int[] printZMatrix(int[][] matrix) {
         // write your code here
-        if (matrix == null || matrix.length == 0 || matrix[0] == 0) {
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
             return null;
         }
         
@@ -14,8 +14,8 @@ public class LintCode_185 {
         int[] result = new int[n * m];
         int count = 0;
 
-        for (int diagSum = 0; diagSum < m + n - 1; diagSum++) {
-            if (diagSum % 2 == 1) {
+        for (int i = 0; i < m + n - 1; i++) {
+            if (i % 2 == 1) {
                 for (int j = 0; j < m; j++) {
                     if (i - j >= 0 && i - j < n) {
                         result[count++] = matrix[j][i-j];    
@@ -23,7 +23,7 @@ public class LintCode_185 {
                 }
             } else {
                 for (int j = i; j >= 0; j--) {
-                    if (j < m && i - j > 0 && i - j < n) {
+                    if (j < m && i - j >= 0 && i - j < n) {
                         result[count++] = matrix[j][i-j];    
                     }
                 }
