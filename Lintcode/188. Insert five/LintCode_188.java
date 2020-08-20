@@ -18,6 +18,6 @@ public class LintCode_188 {
             }
         }
 
-        return Integer.parseInt(nun.substring(0, i) + '5' + nums.substring(i));
+        return Integer.parseInt(num.substring(0, i) + '5' + num.substring(i));
     }
 }
