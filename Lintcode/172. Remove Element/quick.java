@@ -11,7 +11,7 @@ public class quick {
             while (i <= j && A[j] == elem) {
                 j--;
             }
-            while (i <= j) {
+            if (i <= j) {
                 int temp = A[i];
                 A[i] = A[j];
                 A[j] = temp;
