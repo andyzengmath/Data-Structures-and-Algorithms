@@ -9,7 +9,7 @@ public class LintCode_211 {
         if (A == null || B == null || A.length() != B.length()) {
             return false;
         }
-        int dict = new int[256];
+        int[] dict = new int[256];
         for (int i = 0; i < A.length(); i++) {
             dict[A.charAt(i)]++;
             dict[B.charAt(i)]--;
