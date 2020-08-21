@@ -9,6 +9,8 @@ public class LintCode_193 {
             return 0;
         }
         Stack<Integer> stack = new Stack<>();
+        int max = 0;
+        
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '(') {
                 stack.push(i);
