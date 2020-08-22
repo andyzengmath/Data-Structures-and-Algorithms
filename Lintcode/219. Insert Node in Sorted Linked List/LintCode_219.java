@@ -8,14 +8,14 @@ public class LintCode_219 {
         // write your code here
         ListNode dummy = new ListNode(0);
         dummy.next = head;
-        ListNode cur = dummy
+        ListNode cur = dummy;
         
         while (cur.next != null && cur.next.val < val) {
             cur = cur.next;
         }
-        ListNode new = new ListNode(val);
-        new.next = cur.next;
-        cur.next = new;
+        ListNode node = new ListNode(val);
+        node.next = cur.next;
+        cur.next = node;
 
         return dummy.next;
     }
