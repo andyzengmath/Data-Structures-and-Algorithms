@@ -13,16 +13,16 @@ public class LintCode_213 {
         StringBuilder sb = new StringBuilder();
         while (j < originalString.length()) {
             if (originalString.charAt(i) != originalString.charAt(j)) {
-                sb.append(str.charAt(i));
+                sb.append(originalString.charAt(i));
                 sb.append(j - i);
                 i = j;
             }
             j++;
         }
-        sb.append(str.charAt(i));
+        sb.append(originalString.charAt(i));
         sb.append(j - i);
 
-        if (sb.length >= originalString.length()) {
+        if (sb.length() >= originalString.length()) {
             return originalString;
         }
         return sb.toString();
