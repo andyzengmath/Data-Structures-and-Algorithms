@@ -1,5 +1,5 @@
 public class LintCode_213 {
-    /**
+    /** Snapchat,Microsoft,Bloomberg,Yelp,GoDaddy,Expedia,Lyft
      * @param originalString: a string
      * @return: a compressed string
      */
