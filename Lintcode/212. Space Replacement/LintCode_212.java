@@ -6,18 +6,18 @@ public class LintCode_212 {
      */
     public int replaceBlank(char[] string, int length) {
         // write your code here
-        if (string == null || string.length == 0) {
+        if (string == null || length == 0) {
             return 0;
         }
         int empty = 0;
-        for (int i = 0; i < string.length; i++) {
+        for (int i = 0; i < length; i++) {
             if (string[i] == ' ') {
                 empty++;
             }
         }
-        int newLen = string.length + 2 * empty;
+        int newLen = length + 2 * empty;
         int count = 1;
-        for (int j = string.length - 1; j >= 0; j--) {
+        for (int j = length - 1; j >= 0; j--) {
             if (string[j] == ' ') {
                 string[newLen - count] = '0';
                 count++;
