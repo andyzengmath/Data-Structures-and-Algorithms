@@ -8,13 +8,13 @@ public class LintCode_235 {
         List<Integer> results = new ArrayList<Integer>();
         int numSqrt = (int) Math.sqrt(num);
         for (int i = 2; i <= numSqrt; i++) {
-            while (nums % i == 0) {
+            while (num % i == 0) {
                 results.add(i);
-                nums /= i;
+                num /= i;
             }
         }
-        if (nums > 1) {
-            results.add(nums);
+        if (num > 1) {
+            results.add(num);
         }
         return results;
     }
