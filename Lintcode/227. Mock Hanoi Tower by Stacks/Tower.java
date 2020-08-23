@@ -6,6 +6,7 @@ public class Tower {
         */
         public Tower(int i) {
             // create three towers
+            disks = new Stack<Integer>();
         }
     
         /*
@@ -27,6 +28,8 @@ public class Tower {
          */
         public void moveTopTo(Tower t) {
             // Move the top disk of this tower to the top of t.
+            int top = disks.pop();
+            t.add(top);
         }
     
         /*
@@ -37,6 +40,11 @@ public class Tower {
          */
         public void moveDisks(int n, Tower destination, Tower buffer) {
             // Move n Disks from this tower to destination by buffer tower
+            if (n > 0) {
+                moveDisk(n-1, buffer, destination);
+                moveTopTo(destination);
+                buffer.moveDisks(n-1, destination, this);
+            }
         }
     
         /*
