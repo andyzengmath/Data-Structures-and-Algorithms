@@ -1,6 +1,5 @@
 public class Tower {
-    public class Tower {
-        private Stack<Integer> disks;
+    private Stack<Integer> disks;
         /*
         * @param i: An integer from 0 to 2
         */
@@ -41,7 +40,7 @@ public class Tower {
         public void moveDisks(int n, Tower destination, Tower buffer) {
             // Move n Disks from this tower to destination by buffer tower
             if (n > 0) {
-                moveDisk(n-1, buffer, destination);
+                moveDisks(n-1, buffer, destination);
                 moveTopTo(destination);
                 buffer.moveDisks(n-1, destination, this);
             }
@@ -54,13 +53,13 @@ public class Tower {
             // write your code here
             return disks;
         }
-    }
-    
-    /**
-     * Your Tower object will be instantiated and called as such:
-     * Tower[] towers = new Tower[3];   
-     * for (int i = 0; i < 3; i++) towers[i] = new Tower(i);
-     * for (int i = n - 1; i >= 0; i--) towers[0].add(i);   
-     * towers[0].moveDisks(n, towers[2], towers[1]);
-     * print towers[0], towers[1], towers[2]
 }
+
+/**
+ * Your Tower object will be instantiated and called as such:
+ * Tower[] towers = new Tower[3];   
+ * for (int i = 0; i < 3; i++) towers[i] = new Tower(i);
+ * for (int i = n - 1; i >= 0; i--) towers[0].add(i);   
+ * towers[0].moveDisks(n, towers[2], towers[1]);
+ * print towers[0], towers[1], towers[2]
+*/
