@@ -1,5 +1,6 @@
 public class LintCode_260 {
-    /**
+    /** Google
+     * 
      * @param matrix: a matrix
      * @return: return true if same.
      */
