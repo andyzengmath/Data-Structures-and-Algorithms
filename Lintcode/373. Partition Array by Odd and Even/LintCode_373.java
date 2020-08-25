@@ -9,6 +9,7 @@ public class LintCode_373 {
             return;
         }
         int start = 0, end = nums.length - 1;
+        
         while (start < end) {
             while (start < end && nums[start] % 2 == 1) {
                 start++;
@@ -16,7 +17,7 @@ public class LintCode_373 {
             while (start < end && nums[end] % 2 == 0) {
                 end--;
             }
-            while (start < end) {
+            if (start < end) {
                 swap(nums, start, end);
                 start++;
                 end--;
@@ -24,7 +25,7 @@ public class LintCode_373 {
         }
     }
 
-    public static swap(int[] nums, int n, int m) {
+    public static void swap(int[] nums, int n, int m) {
         int temp = nums[n];
         nums[n] = nums[m];
         nums[m] = temp;
