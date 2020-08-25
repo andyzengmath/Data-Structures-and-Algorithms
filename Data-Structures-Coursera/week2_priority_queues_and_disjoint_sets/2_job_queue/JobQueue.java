@@ -7,6 +7,7 @@ public class JobQueue {
 
     private int[] assignedWorker;
     private long[] startTime;
+    private Processor[] processors;
 
     private FastScanner in;
     private PrintWriter out;
@@ -34,19 +35,55 @@ public class JobQueue {
         // TODO: replace this code with a faster algorithm.
         assignedWorker = new int[jobs.length];
         startTime = new long[jobs.length];
-        long[] nextFreeTime = new long[numWorkers];
+        processors = new Processor[numWorkers];
+        for (int i = 0; i < numWorkers; i++) {
+            processors[i] = new Processor(i, 0);
+        }
+
         for (int i = 0; i < jobs.length; i++) {
-            int duration = jobs[i];
-            int bestWorker = 0;
-            for (int j = 0; j < numWorkers; ++j) {
-                if (nextFreeTime[j] < nextFreeTime[bestWorker])
-                    bestWorker = j;
-            }
-            assignedWorker[i] = bestWorker;
-            startTime[i] = nextFreeTime[bestWorker];
-            nextFreeTime[bestWorker] += duration;
+            assignedWorker[i] = processors[0].number;
+            startTime[i] = processors[0].start;
+            processors[0].start += jobs[i];
+            siftDown(0);
         }
     }
+
+    private int leftChild(int n) {
+        return 2 * n + 1;
+    }
+
+    private int rightChild(int n) {
+        return 2 * n + 2;
+    }
+
+    private void siftDown(int i) {
+        int minIndex = i;
+        int l = leftChild(i);
+        if (l < processors.length && (processors[l].start < processors[minIndex].start)) {
+            minIndex = l;
+        }
+        int r = rightChild(i);
+        if (r < processors.length && (processors[r].start < processors[minIndex].start)) {
+            minIndex = r;
+        }
+        if (i != minIndex) {
+            Processor temp = processors[i];
+            processors[i] = processors[minIndex];
+            processors[minIndex] = temp;
+            siftDown(minIndex);
+        }
+    }
+
+    private class Processor{
+        int number;
+        long start;
+        Processor(int number, long start) {
+            this.number = number;
+            this.start = start;
+        }
+    }
+
+
 
     public void solve() throws IOException {
         in = new FastScanner();
