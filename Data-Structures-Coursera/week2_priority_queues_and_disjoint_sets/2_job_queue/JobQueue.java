@@ -59,13 +59,17 @@ public class JobQueue {
     private void siftDown(int i) {
         int minIndex = i;
         int l = leftChild(i);
-        if (l < processors.length && (processors[l].start < processors[minIndex].start)) {
-            minIndex = l;
-        }
+        if(l < processors.length && (processors[l].start < processors[minIndex].start || 
+            (processors[l].start == processors[minIndex].start && processors[l].number < processors[minIndex].number))) {
+                minIndex = l;
+            }
+            
         int r = rightChild(i);
-        if (r < processors.length && (processors[r].start < processors[minIndex].start)) {
-            minIndex = r;
-        }
+        if(r < processors.length && (processors[r].start < processors[minIndex].start || 
+            (processors[r].start == processors[minIndex].start && processors[r].number < processors[minIndex].number))) {
+                minIndex = r;
+            }
+            
         if (i != minIndex) {
             Processor temp = processors[i];
             processors[i] = processors[minIndex];
