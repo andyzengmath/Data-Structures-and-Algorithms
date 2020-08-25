@@ -40,22 +40,20 @@ public class BuildHeap {
       //
       // TODO: replace by a more efficient implementation
      
-      for (int i = (data.length; / 2) - 1; i >= 0; i--) {
+      for (int i = (data.length / 2) - 1; i >= 0; i--) {
         siftDown(i);
       }
     }
 
-    private static void siftDown(int n) {
+    private void siftDown(int n) {
       int minIndex = n;
       int l = leftChild(n);
       if (l < data.length && data[l] < data[minIndex]) {
-        if (l < data.length && data[l] < data[]) {
         minIndex = l;
       }
-      int r = rightChild(i);
-      if (l < data.length && data[l] < data[minIndex]) {
-        if (r < data.length && data[r] < data[minIndex]) {
-          minIndex = r;
+      int r = rightChild(n);
+      if (r < data.length && data[r] < data[minIndex]) {
+        minIndex = r;
         }
       if (n != minIndex) {
         swaps.add(new Swap(n, minIndex));
