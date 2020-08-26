@@ -3,3 +3,4 @@
 ##LintCode/LeetCode
 LintCode|LeetCode|times|mark
 --------|--------|-----|----
+[375. Clone Binary Tree](https://www.lintcode.com/problem/clone-binary-tree)|[1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/)|1| |
