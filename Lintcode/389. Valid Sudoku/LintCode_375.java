@@ -12,7 +12,7 @@ public class LintCode_375 {
         for (int row = 0; row < 9; row++) {
             used.clear();
             for (int col = 0; col < 9; col++) {
-                if (checkValid(board[row][col], used)) {
+                if (! checkValid(board[row][col], used)) {
                     return false;
                 }
             }
@@ -21,7 +21,7 @@ public class LintCode_375 {
         for (int col = 0; col < 9; col++) {
             used.clear();
             for (int row = 0; row < 9; row++) {
-                if (checkValid(board[row][col], used)) {
+                if (! checkValid(board[row][col], used)) {
                     return false;
                 }
             }
@@ -42,7 +42,7 @@ public class LintCode_375 {
         return true;
     }
 
-    public checkValid(char c, Set<Character> used) {
+    boolean checkValid(char c, Set<Character> used) {
         if (c == '.') {
             return true;
         }
