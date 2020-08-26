@@ -23,7 +23,7 @@ public class LintCode_375 {
             head.left = left;
         }
         if (cur.right != null) {
-            TreeNode right = new TreeNode(right.left.val);
+            TreeNode right = new TreeNode(cur.right.val);
             head.right = right;
         }
         traverse(root.left, head.left);
