@@ -1,4 +1,5 @@
 public class LeetCode_674 {
+    // LintCode 397
     public int findLengthOfLCIS(int[] A) {
         if (A == null || A.length == 0) {
             return 0;
