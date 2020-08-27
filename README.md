@@ -9,4 +9,5 @@ LintCode|LeetCode|times|mark|FAQ
 [397. Longest Continuous Increasing Subsequence(e)](https://www.lintcode.com/problem/longest-continuous-increasing-subsequence/)|[674. Longest Continuous Increasing Subsequence(e)](https://leetcode.com/problems/longest-continuous-increasing-subsequence/)|1| Facebook| 
 [407. Plus One(e)](https://www.lintcode.com/problem/plus-one/)|[66. Plus One(e)](https://leetcode.com/problems/plus-one/)|1|Google|FAQ++
 [408. Add Binary(e)](https://www.lintcode.com/problem/add-binary/)|[67. Add Binary(e)](https://leetcode.com/problems/add-binary/)|1|Facebook|FAQ+
+[417. Valid Number(e)](https://www.lintcode.com/problem/valid-number/description)|[65. Valid Number(h)](https://leetcode.com/problems/valid-number/)|1|LinkedIn|FAQ+
 
