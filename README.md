@@ -13,4 +13,5 @@ LintCode|LeetCode|times|mark|FAQ
 [420. Count and Say(e)](https://www.lintcode.com/problem/count-and-say/description)|[38. Count and Say(e)](https://leetcode.com/problems/count-and-say/)|1|Facebook|
 [422. Length of Last Word(e)](https://www.lintcode.com/problem/length-of-last-word/description)|[58. Length of Last Word(e)](https://leetcode.com/problems/length-of-last-word/)|1| |FAQ
 [433. Number of Islands(e)](https://www.lintcode.com/problem/number-of-islands/description)|[200. Number of Islands(m)](https://leetcode.com/problems/number-of-islands/)|1|Uber,Google,Amazon,Facebook,Zenefits,Microsoft|FAQ+
+[445. Cosine Similarity(e)](https://www.lintcode.com/problem/cosine-similarity/description)|[734. Sentence Similarity](https://leetcode.com/problems/sentence-similarity/)|1||
 
