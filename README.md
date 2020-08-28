@@ -10,4 +10,5 @@ LintCode|LeetCode|times|mark|FAQ
 [407. Plus One(e)](https://www.lintcode.com/problem/plus-one/)|[66. Plus One(e)](https://leetcode.com/problems/plus-one/)|1|Google|FAQ++
 [408. Add Binary(e)](https://www.lintcode.com/problem/add-binary/)|[67. Add Binary(e)](https://leetcode.com/problems/add-binary/)|1|Facebook|FAQ+
 [417. Valid Number(e)](https://www.lintcode.com/problem/valid-number/description)|[65. Valid Number(h)](https://leetcode.com/problems/valid-number/)|1|LinkedIn|FAQ+
+[420. Count and Say(e)](https://www.lintcode.com/problem/count-and-say/description)|[38. Count and Say(e)](https://leetcode.com/problems/count-and-say/)|1|Facebook|
 
