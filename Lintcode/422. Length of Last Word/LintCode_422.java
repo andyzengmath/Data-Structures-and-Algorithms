@@ -9,10 +9,10 @@ public class LintCode_422 {
             return 0;
         }
 
-        s = s.trim;
+        s = s.trim();
         int last = s.length() - 1;
         while (last >=0 && s.charAt(last) != ' ') {
-            index--;
+            last--;
         }
 
         return s.length() - 1 - last;
