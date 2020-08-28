@@ -13,6 +13,11 @@ public class LintCode_433 {
      * @param grid: a boolean 2D matrix
      * @return: an integer
      */
+    
+    /**
+     * @param grid: a boolean 2D matrix
+     * @return: an integer
+     */
     public int numIslands(boolean[][] grid) {
         // write your code here
         if (grid == null || grid.length == 0 || grid[0].length == 0) {
@@ -44,7 +49,7 @@ public class LintCode_433 {
         grid[x][y] = false;
 
         while (!queue.isEmpty()) {
-            Coordinator coor = queue.poll();
+            Coordinate coor = queue.poll();
             for (int i = 0; i < 4; i++) {
                 Coordinate adj = new Coordinate(
                     coor.x + directionX[i],
