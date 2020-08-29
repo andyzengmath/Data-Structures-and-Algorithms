@@ -17,7 +17,7 @@ public class LintCode_457 {
             } else if (nums[mid] < target) {
                 start = mid + 1;
             } else {
-                end = mid;
+                end = mid - 1;
             }
         }
         if (nums[start] == target) {
