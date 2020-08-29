@@ -14,4 +14,6 @@ LintCode|LeetCode|times|mark|FAQ
 [422. Length of Last Word(e)](https://www.lintcode.com/problem/length-of-last-word/description)|[58. Length of Last Word(e)](https://leetcode.com/problems/length-of-last-word/)|1| |FAQ
 [433. Number of Islands(e)](https://www.lintcode.com/problem/number-of-islands/description)|[200. Number of Islands(m)](https://leetcode.com/problems/number-of-islands/)|1|Uber,Google,Amazon,Facebook,Zenefits,Microsoft|FAQ+
 [445. Cosine Similarity(e)](https://www.lintcode.com/problem/cosine-similarity/description)|[734. Sentence Similarity](https://leetcode.com/problems/sentence-similarity/)|1||
+[453. Flatten Binary Tree to Linked List(e)](https://www.lintcode.com/problem/flatten-binary-tree-to-linked-list/description)|[114. Flatten Binary Tree to Linked List(m)](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)|1|Microsoft | 
+
 
