@@ -19,7 +19,7 @@ public class LintCode_468 {
             return false;
         }
 
-        if (root.val != root2.val) {
+        if (root1.val != root2.val) {
             return false;
         }
 
