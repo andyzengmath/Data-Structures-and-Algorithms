@@ -16,4 +16,4 @@ LintCode|LeetCode|times|mark|FAQ
 [445. Cosine Similarity(e)](https://www.lintcode.com/problem/cosine-similarity/description)|[734. Sentence Similarity](https://leetcode.com/problems/sentence-similarity/)|1||
 [453. Flatten Binary Tree to Linked List(e)](https://www.lintcode.com/problem/flatten-binary-tree-to-linked-list/description)|[114. Flatten Binary Tree to Linked List(m)](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)|1|Microsoft | 
 [457. Classical Binary Search(e)](https://www.lintcode.com/problem/classical-binary-search/description)|[704. Binary Search(e)](https://leetcode.com/problems/binary-search/)|1| |
-
+[474. Lowest Common Ancestor II(2)](https://www.lintcode.com/problem/lowest-common-ancestor-ii/description)|[236. Lowest Common Ancestor of a Binary Tree(m)](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|1| |
