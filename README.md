@@ -21,4 +21,6 @@ LintCode|LeetCode|times|mark|FAQ
 [474. Lowest Common Ancestor II(2)](https://www.lintcode.com/problem/lowest-common-ancestor-ii/description)|[236. Lowest Common Ancestor of a Binary Tree(m)](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|1| |
 [482. Binary Tree Level Sum(e)](https://www.lintcode.com/problem/binary-tree-level-sum/description)| |1|NetEase| 
 [487. Name Deduplication](https://www.lintcode.com/problem/name-deduplication/description)|[1161. Maximum Level Sum of a Binary Tree(m)](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/)|1|Google| 
+[488. Happy Number(e)](https://www.lintcode.com/problem/happy-number/description)|[202. Happy Number(e)](https://leetcode.com/problems/happy-number/)|1|Airbnb,Twitter,Uber|FAQ+ 
+
 
