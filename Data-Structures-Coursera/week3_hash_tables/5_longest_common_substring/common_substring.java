@@ -1,6 +1,6 @@
 import java.util.*;
 import java.io.*;
-
+// not pass #8 with x1 =1 x2 =9
 public class common_substring {
     public class Answer {
         int i, j, len;
