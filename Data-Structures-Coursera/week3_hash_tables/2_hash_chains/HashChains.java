@@ -48,7 +48,12 @@ public class HashChains {
         switch (query.type) {
             case "add":
                 if (elems[hashNum] != null){
-                    elems[hashNum].add(0, query.s);
+                    if (elems[hashNum].contains(query.s)) {
+                        break;
+                    } else {
+                        elems[hashNum].add(0, query.s);
+                    }
+                    
                 } else {
                     elems[hashNum] = new ArrayList<String>();
                     elems[hashNum].add(0, query.s);

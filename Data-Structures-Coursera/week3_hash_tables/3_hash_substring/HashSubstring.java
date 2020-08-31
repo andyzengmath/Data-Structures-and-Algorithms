@@ -1,5 +1,6 @@
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.StringTokenizer;
@@ -33,18 +34,66 @@ public class HashSubstring {
         String s = input.pattern, t = input.text;
         int m = s.length(), n = t.length();
         List<Integer> occurrences = new ArrayList<Integer>();
-        for (int i = 0; i + m <= n; ++i) {
-	    boolean equal = true;
-	    for (int j = 0; j < m; ++j) {
-		if (s.charAt(j) != t.charAt(i + j)) {
-		     equal = false;
- 		    break;
-		}
-	    }
-            if (equal)
+
+        int prime = 1000000007, x = 31;
+
+        long[] P = new long[m];
+        long[] T = new long[n];
+        for(int i = 0; i < m; i++){
+            P[i] = s.charAt(i);
+        }
+        for(int i = 0; i < n; i++){
+            T[i] = t.charAt(i);
+        }
+        long pHash = polyHash(P, prime, x);
+        long[] H = precomputeHashes(T, m, prime, x);
+        
+        for (int i = 0; i <= n - m; i++) {
+            if (pHash != H[i]) {
+                continue;
+            }
+            if (areEqual(Arrays.copyOfRange(T, i, i + m), P)) {
                 occurrences.add(i);
-	}
+            }
+        }
         return occurrences;
+    }
+
+    private static boolean areEqual(long[] S1, long[] S2) {
+        if (S1.length != S2.length) {
+            return false;
+        }  
+        for (int i = 0; i < S1.length; i++) {
+            if (S1[i] != S2[i]) {
+                return false;
+            }
+        }
+            
+        
+        return true;
+    }
+
+    private static long polyHash(long[] S, int p, int x) {
+        long hash = 0;
+        for (int i = S.length - 1; i >= 0; i--) {
+            hash = (hash * x + S[i]) % p;
+        }
+        return hash;
+    }
+
+    private static long[] precomputeHashes(long[] T, int length, int p, int x) {
+        long[] H = new long[T.length - length + 1];
+        long[] S = Arrays.copyOfRange(T, T.length - length, T.length);
+
+        H[T.length - length] = polyHash(S, p, x);
+        long y = 1;
+        for (int i = 1; i <= length; i++) {
+            y = (y * x) % p;
+        }
+        for (int i = T.length - length - 1; i >= 0; i--) {
+            H[i] = ((x * H[i+1] + T[i] % p - y * T[i+length]) % p + p) % p;
+        }
+        return H;
     }
 
     static class Data {
