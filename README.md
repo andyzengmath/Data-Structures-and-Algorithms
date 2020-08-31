@@ -26,6 +26,7 @@ LintCode|LeetCode|times|mark|FAQ
 [496. Toy Factory(e)](https://www.lintcode.com/problem/toy-factory/description)|[]()|1| | 
 [506. Movie Recommendation(e)](https://www.lintcode.com/problem/movie-recommendation/description)|[]()|1| | 
 [514. Paint Fence(e)](https://www.lintcode.com/problem/paint-fence/description)|[276. Paint Fence](https://leetcode.com/problems/paint-fence/)|1|Google| 
+[517. Ugly Number(e)](https://www.lintcode.com/problem/ugly-number/description)|[263. Ugly Number(e)](https://leetcode.com/problems/ugly-number/)|1| |FAQ
 
 
 
