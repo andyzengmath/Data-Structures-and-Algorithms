@@ -24,7 +24,9 @@ LintCode|LeetCode|times|mark|FAQ
 [488. Happy Number(e)](https://www.lintcode.com/problem/happy-number/description)|[202. Happy Number(e)](https://leetcode.com/problems/happy-number/)|1|Airbnb,Twitter,Uber|FAQ+ 
 [495. Implement Stack(e)](https://www.lintcode.com/problem/implement-stack/description)|[225. Implement Stack using Queues(e)](https://leetcode.com/problems/implement-stack-using-queues/)|1| | 
 [496. Toy Factory(e)](https://www.lintcode.com/problem/toy-factory/description)|[]()|1| | 
-[506. Movie Recommendation(e)](https://www.lintcode.com/problem/movie-recommendation/description)|[]()|1| |
+[506. Movie Recommendation(e)](https://www.lintcode.com/problem/movie-recommendation/description)|[]()|1| | 
+[514. Paint Fence(e)](https://www.lintcode.com/problem/paint-fence/description)|[276. Paint Fence](https://leetcode.com/problems/paint-fence/)|1|Google| 
+
 
 
 
