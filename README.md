@@ -28,6 +28,7 @@ LintCode|LeetCode|times|mark|FAQ
 [514. Paint Fence(e)](https://www.lintcode.com/problem/paint-fence/description)|[276. Paint Fence](https://leetcode.com/problems/paint-fence/)|1|Google| 
 [517. Ugly Number(e)](https://www.lintcode.com/problem/ugly-number/description)|[263. Ugly Number(e)](https://leetcode.com/problems/ugly-number/)|1| |FAQ
 [524. Left Pad(e)](https://www.lintcode.com/problem/left-pad/description)|[]()|1| | 
+[539. Move Zeroes(e)](https://www.lintcode.com/problem/move-zeroes/description)|[283. Move Zeroes(e)](https://leetcode.com/problems/move-zeroes/)|1|Bloomberg,Facebook| 
 
 
 
