@@ -30,6 +30,8 @@ LintCode|LeetCode|times|mark|FAQ
 [524. Left Pad(e)](https://www.lintcode.com/problem/left-pad/description)|[]()|1| | 
 [539. Move Zeroes(e)](https://www.lintcode.com/problem/move-zeroes/description)|[283. Move Zeroes(e)](https://leetcode.com/problems/move-zeroes/)|1|Bloomberg,Facebook| 
 [547. Intersection of Two Arrays(e)](https://www.lintcode.com/problem/intersection-of-two-arrays/description)|[349. Intersection of Two Arrays(e)](https://leetcode.com/problems/intersection-of-two-arrays/)|1|Uber,Facebook,Two Sigma| 
+[551. Nested List Weight Sum(e)](https://www.lintcode.com/problem/nested-list-weight-sum/description)|[339. Nested List  Weight Sum(e)](https://leetcode.com/problems/nested-list-weight-sum/#)|1|LinkedIn| 
+
 
 
 
