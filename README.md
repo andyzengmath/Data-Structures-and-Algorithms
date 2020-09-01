@@ -32,7 +32,7 @@ LintCode|LeetCode|times|mark|FAQ
 [547. Intersection of Two Arrays(e)](https://www.lintcode.com/problem/intersection-of-two-arrays/description)|[349. Intersection of Two Arrays(e)](https://leetcode.com/problems/intersection-of-two-arrays/)|1|Uber,Facebook,Two Sigma| 
 [551. Nested List Weight Sum(e)](https://www.lintcode.com/problem/nested-list-weight-sum/description)|[339. Nested List  Weight Sum(e)](https://leetcode.com/problems/nested-list-weight-sum/#)|1|LinkedIn| 
 [569. Add Digits(e)](https://www.lintcode.com/problem/add-digits/description)|[258. Add Digits(e)](https://leetcode.com/problems/add-digits/)|1|Adobe,Microsoft| 
-
+[595. Binary Tree Longest Consecutive Sequence(e)](https://www.lintcode.com/problem/binary-tree-longest-consecutive-sequence/description)|[298. Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/)|1|Google,NetEase| 
 
 
 
