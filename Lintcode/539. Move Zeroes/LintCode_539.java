@@ -12,7 +12,7 @@ public class LintCode_539 {
             return;
         }
         int left = 0, right = 0;
-        while (right <= nums.length) {
+        while (right < nums.length) {
             if (nums[right] != 0) {
                 nums[left] = nums[right];
                 left++;
