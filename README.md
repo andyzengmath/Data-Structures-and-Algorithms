@@ -29,6 +29,7 @@ LintCode|LeetCode|times|mark|FAQ
 [517. Ugly Number(e)](https://www.lintcode.com/problem/ugly-number/description)|[263. Ugly Number(e)](https://leetcode.com/problems/ugly-number/)|1| |FAQ
 [524. Left Pad(e)](https://www.lintcode.com/problem/left-pad/description)|[]()|1| | 
 [539. Move Zeroes(e)](https://www.lintcode.com/problem/move-zeroes/description)|[283. Move Zeroes(e)](https://leetcode.com/problems/move-zeroes/)|1|Bloomberg,Facebook| 
+[547. Intersection of Two Arrays(e)](https://www.lintcode.com/problem/intersection-of-two-arrays/description)|[349. Intersection of Two Arrays(e)](https://leetcode.com/problems/intersection-of-two-arrays/)|1|Uber,Facebook,Two Sigma| 
 
 
 
