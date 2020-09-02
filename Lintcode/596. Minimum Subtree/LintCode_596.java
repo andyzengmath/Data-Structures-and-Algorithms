@@ -5,6 +5,7 @@ public class LintCode_596 {
      * LintCode will print the subtree which root is your return node.
      * It's guaranteed that there is only one subtree with minimum sum and the given binary tree is not an empty tree.
      * time: O(n), space O(n)
+     * 
      */
     private int minSum;
     private TreeNode minRoot;
