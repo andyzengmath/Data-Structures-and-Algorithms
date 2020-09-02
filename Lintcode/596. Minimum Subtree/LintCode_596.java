@@ -7,6 +7,7 @@ public class LintCode_596 {
      */
     private int minSum;
     private TreeNode minRoot;
+
     public TreeNode findSubtree(TreeNode root) {
         // divide & conquer + traverse
         minSum = Integer.MAX_VALUE;
@@ -15,7 +16,7 @@ public class LintCode_596 {
         return minRoot;
     }
 
-    private void getSum(TreeNode root) {
+    private int getSum(TreeNode root) {
         if (root == null) {
             return 0;
         }
@@ -24,5 +25,7 @@ public class LintCode_596 {
             minSum = sum;
             minRoot = root;
         }
+
+        return sum;
     }
 }
