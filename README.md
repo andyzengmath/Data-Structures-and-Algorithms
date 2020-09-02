@@ -36,7 +36,8 @@ LintCode|LeetCode|times|mark|FAQ
 [596. Minimum Subtree(e)](https://www.lintcode.com/problem/minimum-subtree/description)|[310. Minimum Height Trees(m)(d)](https://leetcode.com/problems/minimum-height-trees/)|1|Microsoft,Yelp|
 [597. Subtree with Maximum Average(e)](https://www.lintcode.com/problem/subtree-with-maximum-average/description)|[]()|1|Amazon| 
 [604. Window Sum(e)](https://www.lintcode.com/problem/window-sum/description)|[]()|1|Amazon| 
-
+[607. Two Sum III - Data structure design(e)](https://www.lintcode.com/problem/two-sum-iii-data-structure-design/description)|[170
+	Two  Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design/)|1|LinkedIn| 
 
 
 
