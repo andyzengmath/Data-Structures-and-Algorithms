@@ -35,7 +35,7 @@ LintCode|LeetCode|times|mark|FAQ
 [595. Binary Tree Longest Consecutive Sequence(e)](https://www.lintcode.com/problem/binary-tree-longest-consecutive-sequence/description)|[298. Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/)|1|Google,NetEase| 
 [596. Minimum Subtree(e)](https://www.lintcode.com/problem/minimum-subtree/description)|[310. Minimum Height Trees(m)(d)](https://leetcode.com/problems/minimum-height-trees/)|1|Microsoft,Yelp|
 [597. Subtree with Maximum Average(e)](https://www.lintcode.com/problem/subtree-with-maximum-average/description)|[]()|1|Amazon| 
-
+[604. Window Sum(e)](https://www.lintcode.com/problem/window-sum/description)|[]()|1|Amazon| 
 
 
 
