@@ -1,5 +1,5 @@
 public class LintCode_628 {
-    /**
+    /** see also 596
      * @param root: the root of binary tree
      * @return: the maximum weight node
      */
