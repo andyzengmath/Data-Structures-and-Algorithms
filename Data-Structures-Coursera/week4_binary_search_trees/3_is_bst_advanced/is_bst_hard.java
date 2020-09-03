@@ -47,7 +47,30 @@ public class is_bst_hard {
 
         boolean isBinarySearchTree() {
           // Implement correct algorithm here
-          return true;
+          if (tree == null || tree.length == 0) {
+              return true;
+          }
+          
+          return isBstUtil(tree[0], (long) Integer.MIN_VALUE -1, (long) Integer.MAX_VALUE + 1);
+        }
+
+        boolean isBstUtil(Node root, long minVal, long maxVal) {
+            boolean result = true;
+            if (root.key < minVal || root.key >= maxVal) {
+                result = false;
+            }
+            if (root.left != -1) {
+                if (!isBstUtil(tree[root.left], minVal, root.key)) {
+                    result = false;
+                }
+            }
+            if (root.right != -1) {
+                if (!isBstUtil(tree[root.right], root.key, maxVal)) {
+                    result = false;
+                }
+            }
+
+            return result;
         }
     }
 
@@ -64,7 +87,7 @@ public class is_bst_hard {
     public void run() throws IOException {
         IsBST tree = new IsBST();
         tree.read();
-        if (tree.solve()) {
+        if (tree.isBinarySearchTree()) {
             System.out.println("CORRECT");
         } else {
             System.out.println("INCORRECT");

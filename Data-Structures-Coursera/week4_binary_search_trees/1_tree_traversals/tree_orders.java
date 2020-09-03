@@ -40,7 +40,7 @@ public class tree_orders {
 
 		List<Integer> inOrder() {
 			ArrayList<Integer> result = new ArrayList<Integer>();
-			postOrderRecursive(result, 0);     
+			inOrderRecursive(result, 0);     
 			return result;
 		}
 

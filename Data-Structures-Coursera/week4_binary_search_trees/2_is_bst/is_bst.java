@@ -45,9 +45,29 @@ public class is_bst {
             }
         }
 
+        int min = Integer.MIN_VALUE;
+
         boolean isBinarySearchTree() {
-          // Implement correct algorithm here
-          return true;
+          if (tree == null || tree.length == 0) {
+              return true;
+          }
+          return inOrder(tree[0]);
+        }
+
+        boolean inOrder(Node current) {
+            boolean result = true;
+            if (current.left != -1) {
+                result = inOrder(tree[current.left]);
+            }
+            if (result && current.key < min) {
+                result = false;
+            } else {
+                min = current.key;
+            }
+            if (result && current.right != -1) {
+                result = inOrder(tree[current.right]);
+            }
+            return result;
         }
     }
 
@@ -64,7 +84,7 @@ public class is_bst {
     public void run() throws IOException {
         IsBST tree = new IsBST();
         tree.read();
-        if (tree.solve()) {
+        if (tree.isBinarySearchTree()) {
             System.out.println("CORRECT");
         } else {
             System.out.println("INCORRECT");
