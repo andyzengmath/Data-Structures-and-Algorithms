@@ -1,6 +1,6 @@
 import java.util.*;
 import java.io.*;
-
+// n-order, pre-order and post-order traversals
 public class tree_orders {
     class FastScanner {
 		StringTokenizer tok = new StringTokenizer("");
@@ -40,26 +40,51 @@ public class tree_orders {
 
 		List<Integer> inOrder() {
 			ArrayList<Integer> result = new ArrayList<Integer>();
-                        // Finish the implementation
-                        // You may need to add a new recursive method to do that
-                        
+			postOrderRecursive(result, 0);     
 			return result;
 		}
 
 		List<Integer> preOrder() {
 			ArrayList<Integer> result = new ArrayList<Integer>();
-                        // Finish the implementation
-                        // You may need to add a new recursive method to do that
-                        
+			preOrderRecursive(result, 0);            
 			return result;
 		}
 
 		List<Integer> postOrder() {
 			ArrayList<Integer> result = new ArrayList<Integer>();
-                        // Finish the implementation
-                        // You may need to add a new recursive method to do that
-                        
+            postOrderRecursive(result, 0);           
 			return result;
+		}
+
+		void inOrderRecursive(ArrayList<Integer> result, int i) {
+			if (left[i] != -1)  {
+				inOrderRecursive(result, left[i]);
+			}
+			result.add(key[i]);
+			if (right[i] != -1) {
+				inOrderRecursive(result, right[i]);
+			}
+		}
+
+		void postOrderRecursive(ArrayList<Integer> result, int i) {
+			if (left[i] != -1)  {
+				postOrderRecursive(result, left[i]);
+			}
+			if (right[i] != -1) {
+				postOrderRecursive(result, right[i]);
+			}
+			result.add(key[i]);
+		}
+
+		void preOrderRecursive(ArrayList<Integer> result, int i) {
+			result.add(key[i]);
+			if (left[i] != -1)  {
+				preOrderRecursive(result, left[i]);
+			}
+			if (right[i] != -1) {
+				preOrderRecursive(result, right[i]);
+			}
+			
 		}
 	}
 
