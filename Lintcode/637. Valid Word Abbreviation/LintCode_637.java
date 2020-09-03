@@ -11,26 +11,27 @@ public class LintCode_637 {
         char[] w = word.toCharArray();
         char[] a = abbr.toCharArray();
 
-        int wIndex = 0, int aIndex = 0;
+        int wIndex = 0, aIndex = 0;
         while (wIndex < word.length() && aIndex < abbr.length()) {
-            if (Character.isDigit(a[index])) {
-                if (a[index] == 0) {
+            if (Character.isDigit(a[aIndex])) {
+                if (a[aIndex] == '0') {
                     return false;
                 }
                 int rep = 0;
-                while (index < a.length && Character.isDigit(a[index])) {
-                    rep = rep * 10 + (a[index] - '0');
-                    index++;
+                while (aIndex < a.length && Character.isDigit(a[aIndex])) {
+                    rep = rep * 10 + (a[aIndex] - '0');
+                    aIndex++;
                 }
-                mIndex += value;
+                wIndex += rep;
             } else {
-                if (w[wIndex] != a[index]) {
+                if (w[wIndex] != a[aIndex]) {
                     return false;
                 }
+                wIndex++;
+                aIndex++; 
             }
-            wIndex++;
-            aIndex++; 
+           
         }
-        return position == word.length() && index == abbr.length();
+        return wIndex == word.length() && aIndex == abbr.length();
     }
 }
