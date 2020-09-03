@@ -23,6 +23,6 @@ public class LintCode_628 {
             maximum_weight = left_weight + right_weight + root.val;
             result = root;
         }
-        return left_weight + rightj_weight + root.val;
+        return left_weight + right_weight + root.val;
     }
 }
