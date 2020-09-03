@@ -40,6 +40,6 @@ LintCode|LeetCode|times|mark|FAQ
 [626. Rectangle Overlap(e)](https://www.lintcode.com/problem/rectangle-overlap/description)|[836. Rectangle Overlap(e)](https://leetcode.com/problems/rectangle-overlap/)|1|Amazon| 
 [628. Maximum Subtree(e)](https://www.lintcode.com/problem/maximum-subtree/description)|[]()|1|Amazon| 
 [637. Valid Word Abbreviation(e)](https://www.lintcode.com/problem/valid-word-abbreviation/description)|[408. Valid Word  Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/)|1|Google| 
-
+[638. Isomorphic Strings(e)](https://www.lintcode.com/problem/isomorphic-strings/description)|[205. Isomorphic Strings(e)](https://leetcode.com/problems/isomorphic-strings/)|1|LinkedIn|  
 
 
