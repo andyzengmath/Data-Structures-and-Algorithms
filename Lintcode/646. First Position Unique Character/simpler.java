@@ -1,0 +1,15 @@
+public class simpler {
+    public int firstUniqChar(String s) {
+        int[] cnt = new int[256];
+
+        for (char c: s.toCharArray()) {
+            cnt[c]++;
+        }
+        for (int i = 0; i < s.length(); i++) {
+            if (cnt[s.charAt(i)] == 1) {
+                return i;
+            }
+        }
+        return -1;
+    }
+}
