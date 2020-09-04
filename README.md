@@ -46,4 +46,5 @@ LintCode|LeetCode|times|mark|FAQ
 [647. Find All Anagrams in a String(e)](https://www.lintcode.com/problem/find-all-anagrams-in-a-string/description)|[49. Group Anagrams(m)(d)](https://leetcode.com/problems/group-anagrams/)|1|Amazon|  
 [655. Add Strings(e)](https://www.lintcode.com/problem/add-strings/description)|[415. Add Strings(e)](https://leetcode.com/problems/add-strings/)|1|Google,Airbnb| 
 [661. Convert BST to Greater Tree(e)](https://www.lintcode.com/problem/convert-bst-to-greater-tree/description)|[538. Convert BST to Greater Tree(e)](https://leetcode.com/problems/convert-bst-to-greater-tree/)|1|Amazon| 
+[662. Guess Number Higher or Lower(e)](https://www.lintcode.com/problem/guess-number-higher-or-lower/description)|[374. Guess Number Higher or Lower(e)](https://leetcode.com/problems/guess-number-higher-or-lower/)|1|Google| 
 
