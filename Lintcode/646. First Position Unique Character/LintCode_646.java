@@ -6,9 +6,10 @@ pulbic class LintCode_646 {
     public int firstUniqChar(String s) {
         // hash
         if (s == null || s.length() == 0) {
-            return 0;
+            return -1;
         }
-        Map<Character, Interger> charCount = new HashMap<Character, Integer>();
+        
+        Map<Character, Integer> charCount = new HashMap<Character, Integer>();
 
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
