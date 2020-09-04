@@ -45,5 +45,5 @@ LintCode|LeetCode|times|mark|FAQ
 [646. First Position Unique Character(e)](https://www.lintcode.com/problem/first-position-unique-character/description)|[387. First Unique Character in a String(e)](https://leetcode.com/problems/first-unique-character-in-a-string/)|1|Amazon| 
 [647. Find All Anagrams in a String(e)](https://www.lintcode.com/problem/find-all-anagrams-in-a-string/description)|[49. Group Anagrams(m)(d)](https://leetcode.com/problems/group-anagrams/)|1|Amazon|  
 [655. Add Strings(e)](https://www.lintcode.com/problem/add-strings/description)|[415. Add Strings(e)](https://leetcode.com/problems/add-strings/)|1|Google,Airbnb| 
-
+[661. Convert BST to Greater Tree(e)](https://www.lintcode.com/problem/convert-bst-to-greater-tree/description)|[538. Convert BST to Greater Tree(e)](https://leetcode.com/problems/convert-bst-to-greater-tree/)|1|Amazon| 
 
