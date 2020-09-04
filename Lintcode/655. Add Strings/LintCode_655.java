@@ -7,17 +7,17 @@ public class LintCode_655 {
     public String addStrings(String num1, String num2) {
         // write your code here
         String result = "";
-        int m = num1.length(), n = num2.length, flag = 0;
-        while (m - 1 >=0 || n - 1 >= 0) {
+        int m = num1.length() - 1, n = num2.length() - 1, flag = 0;
+        while (m >=0 || n >= 0) {
             int a, b;
-            if (i >= 0) {
-                a = num1.charAt(i--) - '0';
+            if (m >= 0) {
+                a = num1.charAt(m--) - '0';
             } else {
                 a = 0;
             }
 
-            if (j >= 0) {
-                b = num2.charAt(j--) - '0';
+            if (n >= 0) {
+                b = num2.charAt(n--) - '0';
             } else {
                 b = 0;
             }
@@ -26,7 +26,7 @@ public class LintCode_655 {
             flag = sum / 10;
         }
 
-        return flag == 1 ? "1" + res : res;
+        return flag == 1 ? "1" + result : result;
 
     }
 }
