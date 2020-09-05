@@ -7,7 +7,8 @@ public class LintCode_693 {
      * The given num does not contain any leading zero.
      */
     public String removeKdigits(String num, int k) {
-        // write your code here.
+        // not pass, need revise
+        
         if (k <= 0 || num == null || num.length() == 0) {
             return "0";
         }
