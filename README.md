@@ -48,4 +48,5 @@ LintCode|LeetCode|times|mark|FAQ
 [661. Convert BST to Greater Tree(e)](https://www.lintcode.com/problem/convert-bst-to-greater-tree/description)|[538. Convert BST to Greater Tree(e)](https://leetcode.com/problems/convert-bst-to-greater-tree/)|1|Amazon| 
 [662. Guess Number Higher or Lower(e)](https://www.lintcode.com/problem/guess-number-higher-or-lower/description)|[374. Guess Number Higher or Lower(e)](https://leetcode.com/problems/guess-number-higher-or-lower/)|1|Google| 
 [671. Rotate Words(e)](https://www.lintcode.com/problem/rotate-words/description)|[796. Rotate String(e)](https://leetcode.com/problems/rotate-string/)|1| | 
-
+[684. Missing String(e)](https://www.lintcode.com/problem/missing-string/description)|[163. Missing Ranges](https://leetcode.com/problems/missing-ranges/)|1| |
+[686. Remove Arbitrary Space(e)](https://www.lintcode.com/problem/remove-arbitrary-space/description)|[]()|1| | 
