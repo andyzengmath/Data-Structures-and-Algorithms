@@ -50,3 +50,4 @@ LintCode|LeetCode|times|mark|FAQ
 [671. Rotate Words(e)](https://www.lintcode.com/problem/rotate-words/description)|[796. Rotate String(e)](https://leetcode.com/problems/rotate-string/)|1| | 
 [684. Missing String(e)](https://www.lintcode.com/problem/missing-string/description)|[163. Missing Ranges](https://leetcode.com/problems/missing-ranges/)|1| |
 [686. Remove Arbitrary Space(e)](https://www.lintcode.com/problem/remove-arbitrary-space/description)|[]()|1| | 
+[693. Remove Dights(e)](https://www.lintcode.com/problem/remove-dights/)|[402. Remove K Digits(m)](https://leetcode.com/problems/remove-k-digits/)|1|Microsoft,Amazon| 
