@@ -17,7 +17,7 @@ public class LintCode_684 {
         }
 
         for (String str: arr1) {
-            if (!set.containts(str)) {
+            if (!set.contains(str)) {
                 result.add(str);
             }
         }
