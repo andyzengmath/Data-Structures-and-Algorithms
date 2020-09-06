@@ -55,4 +55,5 @@ LintCode|LeetCode|times|mark|FAQ
 [702. Concatenated String with Uncommon Characters of Two Strings(e)](https://www.lintcode.com/problem/concatenated-string-with-uncommon-characters-of-two-strings/description)|[884. Uncommon Words from Two Sentences(e)](https://leetcode.com/problems/uncommon-words-from-two-sentences/)|1|Microsoft| 
 [720. Rearrange a String With Integers(e)](https://www.lintcode.com/problem/rearrange-a-string-with-integers/description)|[]()|1|Facebook| 
 [730. Sum of All Subsets(e)](https://www.lintcode.com/problem/sum-of-all-subsets/description)|[891. Sum of Subsequence Widths(h)(d)](https://leetcode.com/problems/sum-of-subsequence-widths/)|1|Bloomberg| 
-[737. Find Elements in Matrix(e)](https://www.lintcode.com/problem/find-elements-in-matrix/description)|1| |
+[737. Find Elements in Matrix(e)](https://www.lintcode.com/problem/find-elements-in-matrix/description)||1| |
+[749. John's backyard garden(e)](https://www.lintcode.com/problem/johns-backyard-garden/description)|[]()|1
