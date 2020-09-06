@@ -53,3 +53,4 @@ LintCode|LeetCode|times|mark|FAQ
 [693. Remove Dights(e)](https://www.lintcode.com/problem/remove-dights/)|[402. Remove K Digits(m)](https://leetcode.com/problems/remove-k-digits/)|1|Microsoft,Amazon| 
 [697. Sum of Square Numbers(e)](https://www.lintcode.com/problem/sum-of-square-numbers/description)|[633. Sum of Square Numbers(e)](https://leetcode.com/problems/sum-of-square-numbers/)|1|LinkedIn| 
 [702. Concatenated String with Uncommon Characters of Two Strings(e)](https://www.lintcode.com/problem/concatenated-string-with-uncommon-characters-of-two-strings/description)|[884. Uncommon Words from Two Sentences(e)](https://leetcode.com/problems/uncommon-words-from-two-sentences/)|1|Microsoft| 
+[720. Rearrange a String With Integers(e)](https://www.lintcode.com/problem/rearrange-a-string-with-integers/description)|[]()|1|Facebook| 
