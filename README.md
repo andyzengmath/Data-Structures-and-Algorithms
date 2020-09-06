@@ -58,3 +58,4 @@ LintCode|LeetCode|times|mark|FAQ
 [737. Find Elements in Matrix(e)](https://www.lintcode.com/problem/find-elements-in-matrix/description)||1| |
 [749. John's backyard garden(e)](https://www.lintcode.com/problem/johns-backyard-garden/description)|[]()|1
 [756. Multiply Two Numbers(e)](https://www.lintcode.com/problem/multiply-two-numbers/description)|[]()|1| | 
+[757. Shortest Unordered Array(e)](https://www.lintcode.com/problem/shortest-unordered-array/description)|[]()|1| |
