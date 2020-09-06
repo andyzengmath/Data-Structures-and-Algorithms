@@ -9,7 +9,7 @@ public class LintCode_720 {
         Arrays.sort(cs);
         int res = 0;
         int index = -1;
-        for (int i = 0; i < cs.length(); i++) {
+        for (int i = 0; i < cs.length; i++) {
             if (cs[i] >= '0' && cs[i] <= '9') {
                 res += (cs[i] - '0');
                 index++;
@@ -17,7 +17,7 @@ public class LintCode_720 {
                 break;
             }
         }
-        if (index = -1) {
+        if (index == -1) {
             return new String(cs);
         } else {
             StringBuilder sb = new StringBuilder();
