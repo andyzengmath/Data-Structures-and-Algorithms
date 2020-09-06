@@ -57,3 +57,4 @@ LintCode|LeetCode|times|mark|FAQ
 [730. Sum of All Subsets(e)](https://www.lintcode.com/problem/sum-of-all-subsets/description)|[891. Sum of Subsequence Widths(h)(d)](https://leetcode.com/problems/sum-of-subsequence-widths/)|1|Bloomberg| 
 [737. Find Elements in Matrix(e)](https://www.lintcode.com/problem/find-elements-in-matrix/description)||1| |
 [749. John's backyard garden(e)](https://www.lintcode.com/problem/johns-backyard-garden/description)|[]()|1
+[756. Multiply Two Numbers(e)](https://www.lintcode.com/problem/multiply-two-numbers/description)|[]()|1| | 
