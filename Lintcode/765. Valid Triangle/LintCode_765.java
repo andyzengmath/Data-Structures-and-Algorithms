@@ -8,7 +8,7 @@ public class LintCode_765 {
     public boolean isValidTriangle(int a, int b, int c) {
         // write your code here
         if (a <= 0 || b <= 0 || c <= 0) {
-            return true;
+            return false;
         }
         return (a + b > c) && (b + c > a) && (a + c > b);
     }
