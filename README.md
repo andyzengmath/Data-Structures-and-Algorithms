@@ -65,3 +65,4 @@ LintCode|LeetCode|times|mark|FAQ
 [765. Valid Triangle(e)](https://www.lintcode.com/problem/valid-triangle/description)|[611. Valid Triangle Number(e)](https://leetcode.com/problems/valid-triangle-number/)|1| | 
 [766. Leap Year(e)](https://www.lintcode.com/problem/leap-year/description)|[]()|1| |
 [767. Reverse Array(e)](https://www.lintcode.com/problem/reverse-array/description)|[344. Reverse String(e)](https://leetcode.com/problems/reverse-string/)|1| | 
+[768. Yang Hui Triangle(e)](https://www.lintcode.com/problem/yang-hui-triangle/description)|[]()|1| |
