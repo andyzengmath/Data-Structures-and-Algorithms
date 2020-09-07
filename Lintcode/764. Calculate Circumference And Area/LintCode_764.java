@@ -5,5 +5,9 @@ public class LintCode_764 {
      */
     public double[] calculate(int r) {
         // write your code here
+        double[] result = new double[2];
+        result[0] = 2 * 3.14 * r;
+        result[1] = 3.14 * r * r;
+        return result;
     }
 }
