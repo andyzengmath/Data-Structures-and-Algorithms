@@ -59,3 +59,4 @@ LintCode|LeetCode|times|mark|FAQ
 [749. John's backyard garden(e)](https://www.lintcode.com/problem/johns-backyard-garden/description)|[]()|1
 [756. Multiply Two Numbers(e)](https://www.lintcode.com/problem/multiply-two-numbers/description)|[]()|1| | 
 [757. Shortest Unordered Array(e)](https://www.lintcode.com/problem/shortest-unordered-array/description)|[]()|1| |
+[759. Time Angle(e)](https://www.lintcode.com/problem/time-angle/description)|[1344. Angle Between Hands of a Clock(m)](https://leetcode.com/problems/angle-between-hands-of-a-clock/)|1|Mathworks| 
