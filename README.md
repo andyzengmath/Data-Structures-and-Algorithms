@@ -67,3 +67,4 @@ LintCode|LeetCode|times|mark|FAQ
 [767. Reverse Array(e)](https://www.lintcode.com/problem/reverse-array/description)|[344. Reverse String(e)](https://leetcode.com/problems/reverse-string/)|1| | 
 [768. Yang Hui Triangle(e)](https://www.lintcode.com/problem/yang-hui-triangle/description)|[]()|1| | 
 [769. Spiral Array(e)](https://www.lintcode.com/problem/spiral-array/description)|[54. Spiral Matrix(m)](https://leetcode.com/problems/spiral-matrix/)|1| |
+[770. Maximum and Minimum(e)](https://www.lintcode.com/problem/maximum-and-minimum/description)|[]()|1| |
