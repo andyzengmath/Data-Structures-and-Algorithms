@@ -62,3 +62,4 @@ LintCode|LeetCode|times|mark|FAQ
 [759. Time Angle(e)](https://www.lintcode.com/problem/time-angle/description)|[1344. Angle Between Hands of a Clock(m)](https://leetcode.com/problems/angle-between-hands-of-a-clock/)|1|Mathworks| 
 [763. Hex Conversion(e)](https://www.lintcode.com/problem/hex-conversion/note)|[405. Convert a Number to Hexadecimal(e)](https://leetcode.com/problems/convert-a-number-to-hexadecimal/)|1| |
 [764. Calculate Circumference And Area(e)](https://www.lintcode.com/problem/calculate-circumference-and-area/description)|[]()|1| | 
+[765. Valid Triangle(e)](https://www.lintcode.com/problem/valid-triangle/description)|[611. Valid Triangle Number(e)](https://leetcode.com/problems/valid-triangle-number/)|1| | 
