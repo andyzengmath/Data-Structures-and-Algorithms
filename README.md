@@ -69,3 +69,4 @@ LintCode|LeetCode|times|mark|FAQ
 [769. Spiral Array(e)](https://www.lintcode.com/problem/spiral-array/description)|[54. Spiral Matrix(m)](https://leetcode.com/problems/spiral-matrix/)|1| |
 [770. Maximum and Minimum(e)](https://www.lintcode.com/problem/maximum-and-minimum/description)|[]()|1| |
 [773. Vlid Anagram(e)](https://www.lintcode.com/problem/vlid-anagram/description)|[242. Valid Anagram(e)](https://leetcode.com/problems/valid-anagram/)|1| | 
+[777. Valid Perfect Square(e)](https://www.lintcode.com/problem/valid-perfect-square/description)|[367. Valid Perfect Square(e)](https://leetcode.com/problems/valid-perfect-square/)|1|LinkedIn| 
