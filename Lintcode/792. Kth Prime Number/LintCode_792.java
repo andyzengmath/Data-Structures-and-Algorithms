@@ -10,8 +10,8 @@ public class LintCode_792 {
             prime[i] = false;
         }
         for (int i = 2; i < n; i++) {
-            if (prime[i] = false) {
-                for (int j = 2 * i; j < i; j++) {
+            if (prime[i] == false) {
+                for (int j = 2 * i; j < n; j += i) {
                     prime[j] = true;
                 }
             }
