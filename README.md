@@ -68,3 +68,4 @@ LintCode|LeetCode|times|mark|FAQ
 [768. Yang Hui Triangle(e)](https://www.lintcode.com/problem/yang-hui-triangle/description)|[]()|1| | 
 [769. Spiral Array(e)](https://www.lintcode.com/problem/spiral-array/description)|[54. Spiral Matrix(m)](https://leetcode.com/problems/spiral-matrix/)|1| |
 [770. Maximum and Minimum(e)](https://www.lintcode.com/problem/maximum-and-minimum/description)|[]()|1| |
+[773. Vlid Anagram(e)](https://www.lintcode.com/problem/vlid-anagram/description)|[242. Valid Anagram(e)](https://leetcode.com/problems/valid-anagram/)|1| | 
