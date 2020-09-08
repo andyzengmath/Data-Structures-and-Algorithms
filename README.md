@@ -73,3 +73,4 @@ LintCode|LeetCode|times|mark|FAQ
 [784. The Longest Common Prefix II(e)](https://www.lintcode.com/problem/the-longest-common-prefix-ii/description)|[14. Longest Common Prefix(e)(d)](https://leetcode.com/problems/longest-common-prefix/)|1| | 
 [792. Kth Prime Number(e)](https://www.lintcode.com/problem/kth-prime-number/description)|[204. Count Primes(e)](https://leetcode.com/problems/count-primes/)|1| | 
 [797. Reach a Number(e)](https://www.lintcode.com/problem/reach-a-number/description)|[754. Reach a Number(m)](https://leetcode.com/problems/reach-a-number/)|1|inmobi| 
+[807. Palindrome Number II(e)](https://www.lintcode.com/problem/palindrome-number-ii/description)|[9. Palindrome Number(e)](https://leetcode.com/problems/palindrome-number/)|1|Amazon| 
