@@ -8,5 +8,17 @@ public class LintCode_784 {
      */
     public int the_longest_common_prefix(List<String> dic, String target) {
         // write your code here
+        int max = 0;
+        for (String item: dic) {
+            int same = 0;
+            for (int i = 0; i < target.length(); i++) {
+                if (i >= item.length()|| target.charAt(i) != item.charAt(i)) {
+                    break;
+                }
+                same++;
+            }
+            max = Math.max(same, max);
+        }
+        return max;
     }
 }
