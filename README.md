@@ -75,3 +75,4 @@ LintCode|LeetCode|times|mark|FAQ
 [797. Reach a Number(e)](https://www.lintcode.com/problem/reach-a-number/description)|[754. Reach a Number(m)](https://leetcode.com/problems/reach-a-number/)|1|inmobi| 
 [807. Palindrome Number II(e)](https://www.lintcode.com/problem/palindrome-number-ii/description)|[9. Palindrome Number(e)](https://leetcode.com/problems/palindrome-number/)|1|Amazon| 
 [812. Bold Words in String(e)](https://www.lintcode.com/problem/bold-words-in-string/description)|[758. Bold Words in String](https://leetcode.com/problems/bold-words-in-string/)|1|Google| 
+[813. Find Anagram Mappings(e)](https://www.lintcode.com/problem/find-anagram-mappings/description)|[760. Find Anagram  Mappings](https://leetcode.com/problems/find-anagram-mappings/)|1|Google|  
