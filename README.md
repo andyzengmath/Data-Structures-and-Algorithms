@@ -6,6 +6,7 @@ LintCode|LeetCode|times|mark|FAQ
 --------|--------|-----|----|---
 [56. Two Sum(e)](https://www.lintcode.com/problem/two-sum/description)|[1. Two Sum(e)](https://leetcode.com/problems/two-sum/)|1|Uber,Apple,Yahoo...|FAQ++ 
 [375. Clone Binary Tree (e)](https://www.lintcode.com/problem/clone-binary-tree)|[1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/)|1| |  
+[384. Longest Substring Without Repeating Characters(e)](https://www.lintcode.com/problem/longest-substring-without-repeating-characters/description)|[3. Longest Substring Without Repeating Characters(m)](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|1|Amazon,Bloomberg,Yelp,Adobe|FAQ++
 [389. Valid Sudoku (e)](https://www.lintcode.com/problem/valid-sudoku) | [36. Valid Sudoku (m)](https://leetcode.com/problems/valid-sudoku/)|1| Uber,Snapchat,Apple| FAQ+
 [397. Longest Continuous Increasing Subsequence(e)](https://www.lintcode.com/problem/longest-continuous-increasing-subsequence/)|[674. Longest Continuous Increasing Subsequence(e)](https://leetcode.com/problems/longest-continuous-increasing-subsequence/)|1| Facebook| 
 [407. Plus One(e)](https://www.lintcode.com/problem/plus-one/)|[66. Plus One(e)](https://leetcode.com/problems/plus-one/)|1|Google|FAQ++
