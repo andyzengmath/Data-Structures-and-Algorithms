@@ -3,6 +3,7 @@ public class LintCode_491 {
     /**
      * @param num: a positive number
      * @return: true if it's a palindrome or false
+     * Coud you solve it without converting the integer to a string?
      */
     public boolean isPalindrome(int num) {
         String number = Integer.toString(num);
