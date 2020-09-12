@@ -6,6 +6,7 @@ public class LintCode_154 {
      */
     public boolean isMatch(String text, String pattern) {
         // recursion
+        // too slow!
         if (pattern.isEmpty()) return text.isEmpty();
         boolean firstMatch = (!text.isEmpty() && (pattern.charAt(0) == text.charAt(0) || pattern.charAt(0) == '.'));
         if (pattern.length() >= 2 && pattern.charAt(1) == '*') {
