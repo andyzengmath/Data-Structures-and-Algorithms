@@ -14,7 +14,7 @@
  */
 
 public class LintCode_174 {
-    /**
+    /** LeetCode-19
      * @param head: The first node of linked list.
      * @param n: An integer
      * @return: The head of linked list.
