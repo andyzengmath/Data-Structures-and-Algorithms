@@ -52,4 +52,22 @@ public class LintCode_104 {
         tail.next = l1 == null? l2: l1;
         return dummy.next;
     }
+
+    public ListNode mergeRecursive(List<ListNode> lists) {
+        if (lists.size() == 0) {
+            return null;
+        }
+        return merge(lists, 0, list.size() - 1);
+    }
+
+    private ListNode merge(ListNode<ListNode> lists, int lo, int hi) {
+        if (lo == hi) {
+            return lists.get(lo);
+        }
+        int mid = lo + (hi - lo) / 2;
+        ListNode l1 = merge(lists, lo, mid);
+        ListNode l2 = merge(lists, mid + 1, hi);
+
+        return merge2Lists(l1, l2);
+    }
 }
