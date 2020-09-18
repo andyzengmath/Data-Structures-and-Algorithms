@@ -15,6 +15,7 @@ public class twobs {
         return Arrays.asList(left, right);
     }
     
+    
     private int firstPosition(List<Integer> nums, int target) {
         int left = 0, right = nums.size() - 1;
         while (left <= right) {
@@ -33,6 +34,7 @@ public class twobs {
         }
         return left;
     }
+
     
     private int lastPosition(List<Integer> nums, int target) {
         int left = 0, right = nums.size() - 1;

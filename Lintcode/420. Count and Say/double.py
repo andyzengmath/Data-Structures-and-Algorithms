@@ -1,4 +1,4 @@
-class Solution(object):
+class double(object):
     def countAndSay(self, n):
         """
         :type n: int
@@ -9,7 +9,7 @@ class Solution(object):
             return s
         
         for i in range(1, n):
-            s = self.sayCount(s)
+            s = sayCount(s)
         return s
     
     def sayCount(self, s):
@@ -17,10 +17,14 @@ class Solution(object):
         string = ""
         for i in range(len(s)):
             if s[i] != s[curr]:
-                string += str(i - curr)
-                string += s[curr]
+                string + str(i - curr)
+                string + s[curr]
                 curr = i
-        string += str(len(s) - curr)
-        string += s[curr]
-
+        string + str(len - curr)
+        string + s(curr)
+        
         return string
+                
+                
+                
+        
