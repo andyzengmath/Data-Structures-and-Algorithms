@@ -1,6 +1,6 @@
 import java.util.HashSet;
 
-public class LintCode_375 {
+public class LintCode_389 {
     /**
      * @param board: the board
      * @return: whether the Sudoku is valid
