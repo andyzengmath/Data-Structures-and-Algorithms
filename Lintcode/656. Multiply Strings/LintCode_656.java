@@ -1,5 +1,6 @@
 public class LintCode_656{
     /** LeetCode_43
+     * O(mn) O(m+n)
      * @param num1: a non-negative integers
      * @param num2: a non-negative integers
      * @return: return product of num1 and num2
