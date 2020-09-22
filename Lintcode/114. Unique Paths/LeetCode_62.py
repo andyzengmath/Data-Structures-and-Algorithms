@@ -1,4 +1,4 @@
-class LeetCode_61:
+class LeetCode_62:
     def uniquePaths(self, m: int, n: int) -> int:
         if m == 0 and n == 0:
             return 0
