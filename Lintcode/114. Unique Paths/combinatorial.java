@@ -18,7 +18,7 @@ public class combinatorial {
             temp *= i;
         }
         for (int j = n; j <= m + n - 2, j++) {
-            result *= i;
+            result *= j;
         }
         result = result / temp;
         return (int)Math.round(result);
