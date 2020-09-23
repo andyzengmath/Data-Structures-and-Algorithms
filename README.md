@@ -4,8 +4,10 @@
 A new google doc is [here](https://docs.google.com/spreadsheets/d/1uuJLeRPIntMNEU8-5HU4z3KB6otjtLooAa_6JFf1E-Y/edit?usp=sharing)
 Also see the [LeetCode/LintCode comparison table](https://www.1point3acres.com/bbs/thread-453640-1-1.html)
 ### 2020-09-23
-Did LeetCode 64 - 71, 2 new: 64.minimal path sum(m) and 71 simplifying path(m). To do:68(h), also 65 needs review
+Did LeetCode 64 - 71, 2 new: 64.minimal path sum(m) and 71 simplifying path(m). To do:68.text justification(h), also 65.valid numbers(h) needs review
+
 Review questions 1-5
+
 LintCode progress: 215
 
 
