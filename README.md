@@ -3,12 +3,13 @@
 ## LintCode/LeetCode
 A new google doc is [here](https://docs.google.com/spreadsheets/d/1uuJLeRPIntMNEU8-5HU4z3KB6otjtLooAa_6JFf1E-Y/edit?usp=sharing)
 Also see the [LeetCode/LintCode comparison table](https://www.1point3acres.com/bbs/thread-453640-1-1.html)
-### 2020-09-23
-Did LeetCode 64 - 71, 2 new: 64.minimal path sum(m) and 71 simplifying path(m). To do:68.text justification(h), also 65.valid numbers(h) needs review
 
-Review questions 1-5
+### **LeetCode 400 challenge record**
+Target date:2020-12-19, task: LeetCode 1-400
+Date|Problems|New Problems|To do/Review|Review Plan|LintCode progress|LeetCode 400 challenge
+----|--------|------------|------------|-----------|-----------------|----------------------
+09-23|Leet 64-71|64.minimal path sum(m) and 71 simplifying path(m)| To do 68.text justification(h), rev: 65.valid numbers(h)|Leet 1-5|215|71/400, 87/100 days left
 
-LintCode progress: 215
 
 
 
