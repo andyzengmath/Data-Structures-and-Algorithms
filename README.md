@@ -8,6 +8,7 @@ Also see the [LeetCode/LintCode comparison table](https://www.1point3acres.com/b
 Target date:2020-12-19, task: LeetCode 1-400
 Date|Problems|New Problems|To do/Review|Review Plan|LintCode progress|LeetCode 400 challenge
 ----|--------|------------|------------|-----------|-----------------|----------------------
+09-24|Leet 72-77|72,73,76,77|76(h)| Leet 60 - 71(done)| 220| 77/400
 09-23|Leet 64-71|64.minimal path sum(m) and 71 simplifying path(m)| To do 68.text justification(h), rev: 65.valid numbers(h)|Leet 1-5|215|71/400, 87/100 days left
 
 
