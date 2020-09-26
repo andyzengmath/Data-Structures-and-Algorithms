@@ -10,13 +10,18 @@ public class LintCode_101 {
         } else if (nums.length == 1) {
             return 1;
         }
-
-        int result = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] != nums[result]) {
-                nums[++result] = nums[i];
+        int index = 0, count = 1;
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] == nums[index]) {
+                if (count < 2) {
+                    nums[++index] = nums[i];
+                    count ++;
+                }
+            } else {
+                nums[++index] = nums[i];
+                count = 1;
             }
         }
-        return result + 1;
+        return index + 1;
     }
 }
