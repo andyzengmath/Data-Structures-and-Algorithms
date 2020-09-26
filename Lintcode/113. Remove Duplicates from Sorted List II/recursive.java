@@ -1,4 +1,5 @@
 class recursive {
+    //fast
     public ListNode deleteDuplicates(ListNode head) {
         if (head == null || head.next.next == null) {
             return head;

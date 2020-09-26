@@ -8,7 +8,7 @@ public class LintCode_113 {
         if (head == null || head.next.next == null) {
             return head;
         }
-
+        
         ListNode dummy = new ListNode(0);
         dummy.next = head;
 
