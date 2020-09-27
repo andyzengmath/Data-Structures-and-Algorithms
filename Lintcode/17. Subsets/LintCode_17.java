@@ -1,5 +1,5 @@
 public class LintCode_17 {
-    /** LeetCode-78 pass LintCode need sort
+    /** LeetCode-78 pass LintCode need
      * @param nums: A set of numbers
      * @return: A list of lists
      */ 
