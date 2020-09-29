@@ -21,7 +21,6 @@ public class LintCode_71 {
             return new ArrayList<List<Integer>>();
         }
         List<List<Integer>> results = new ArrayList<>();
-        
         LinkedList<TreeNode> node_queue = new LinkedList<TreeNode>();
         node_queue.add(root);
         node_queue.add(null);
