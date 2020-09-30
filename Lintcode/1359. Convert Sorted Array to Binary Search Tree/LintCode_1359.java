@@ -20,7 +20,7 @@ public class LintCode_1359 {
         return buildTree(nums, 0, nums.length - 1);
     }
 
-    public TreeNode buildTree(int[] nums, int start, int end) {
+    public TreeNode buildTree(int[] nums, int left, int right) {
         if (left > right) {
             return null;
         }
@@ -29,5 +29,6 @@ public class LintCode_1359 {
         TreeNode root = new TreeNode(nums[mid]);
         root.left = buildTree(nums, left, mid - 1);
         root.right = buildTree(nums, mid + 1, right);
+        return root;
     }
 }
