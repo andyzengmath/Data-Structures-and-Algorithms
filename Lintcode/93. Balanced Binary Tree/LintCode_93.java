@@ -15,10 +15,10 @@ public class LintCode_93 {
         }
         int left = getDepth(root.left);
         int right = getDepth(root.right);
-        if (left == rightJ) {
-            return left + 1;
-        } else {
+        if (Math.abs(left - right) > 1  || left == -1 || right == -1) {
             return -1;
+        } else {
+            return Math.max(left, right) + 1;
         }
     }
 }
