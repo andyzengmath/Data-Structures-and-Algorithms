@@ -21,19 +21,21 @@ class Node {
 };
 */
 
-class LeetCode_116 {
+class LeetCode_117 {
     public Node connect(Node root) {
-        if (root == null) return root;
-
-        Queue<Node> queue = new LinkedList<Node>();
+        if (root == null) {
+            return null;
+        }
+        
+        Queue<Node> queue = new LinkedList<>();
         queue.add(root);
-        while (queue.size() > 0) {
+        while (!queue.isEmpty()) {
             int size = queue.size();
+            Node last = null;
             for (int i = 0; i < size; i++) {
                 Node currNode = queue.poll();
-                if (i < size - 1) {
-                    Node nextNode = queue.peek();
-                    currNode.next = nextNode;
+                if (i != 0) {
+                    last.next = currNode;
                 }
                 if (currNode.left != null) {
                     queue.add(currNode.left);
@@ -41,7 +43,9 @@ class LeetCode_116 {
                 if (currNode.right != null) {
                     queue.add(currNode.right);
                 }
+                last = currNode;
             }
+        }
         return root;
     }
 }
