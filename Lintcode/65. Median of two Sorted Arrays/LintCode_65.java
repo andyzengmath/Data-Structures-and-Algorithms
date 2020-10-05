@@ -1,5 +1,6 @@
 public class LintCode_75 {
     /* LeetCode_4 hard
+    1review 10-04-20
      * @param A: An integer array
      * @param B: An integer array
      * @return: a double whose format is *.5 or *.0

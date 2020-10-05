@@ -1,5 +1,6 @@
 public class LintCode_384 {
     /** LeetCode 3
+     *  1review 10-05-20
      * @param s: a string
      * @return: an integer
      * Challenge: time complexity O(n)
