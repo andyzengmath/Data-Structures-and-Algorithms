@@ -1,4 +1,6 @@
-public class inPlace {
+public class LeetCode_2 {
+    // Leet-2 
+    // 1 review 10-05-20
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int carry = 0;
         ListNode head = l1;
@@ -22,7 +24,9 @@ public class inPlace {
         }
 
         if (carry == 1) {
-            l1.next = new ListNode(1);
+            ListNode newNode = new ListNode(1);
+            newNode.next = null;
+            l1.next = newNode;
         }
 
         return head;

@@ -1,5 +1,6 @@
 public class LintCode_56 {
-    /**
+    /** Leet-1
+     * 1reviewed 10-05-20
      * @param numbers: An array of Integer
      * @param target: target = numbers[index1] + numbers[index2]
      * @return: [index1 + 1, index2 + 1] (index1 < index2)
