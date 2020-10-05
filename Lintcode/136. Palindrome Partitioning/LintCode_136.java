@@ -1,5 +1,6 @@
 public class LintCode_136 {
     /* Leet 131
+    related: lint 108 Palindrome partitioning II
      * @param s: A string
      * @return: A list of lists of string
      */
