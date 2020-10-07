@@ -1,6 +1,6 @@
 public class LintCode_200 {
     /** Leetcode-5
-     * O(n^2)
+     * O(n^2) 1review 10-06-2020
      * @param s: input string
      * @return: a string as the longest palindromic substring
      * O(n2) time is acceptable. Can you do it in O(n) time.

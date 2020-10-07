@@ -1,5 +1,5 @@
 public class Solution {
-    /** leetcode-6
+    /** leetcode-6 
      * @param s: the given string
      * @param numRows: the number of rows
      * @return: the string read line by line
