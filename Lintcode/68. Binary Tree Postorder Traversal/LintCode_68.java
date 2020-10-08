@@ -3,7 +3,7 @@ import java.util.Stack;
 import javax.swing.tree.TreeNode;
 
 public class LintCode_68 {
-    /**
+    /** bit strange 
      * @param root: A Tree
      * @return: Postorder in ArrayList which contains node values.
      */
