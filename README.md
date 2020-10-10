@@ -3,6 +3,7 @@
 ## LintCode/LeetCode
 A new google doc is [here](https://docs.google.com/spreadsheets/d/1uuJLeRPIntMNEU8-5HU4z3KB6otjtLooAa_6JFf1E-Y/edit?usp=sharing)
 Also see the [LeetCode/LintCode comparison table](https://www.1point3acres.com/bbs/thread-453640-1-1.html)
+[LeetCode by company tag](https://github.com/youhusky/Leetcode_Company)
 
 ### **LeetCode 400 challenge record**
 Target date:2020-12-19, task: LeetCode 1-400
