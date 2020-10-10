@@ -2,7 +2,7 @@
       int read4(char[] buf); */
 
       public class LintCode_660 extends Reader4 {
-        /**
+        /** Leet 158
          * @param buf destination buffer
          * @param n maximum number of characters to read
          * @return the number of characters read
