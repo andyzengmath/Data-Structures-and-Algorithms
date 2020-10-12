@@ -8,6 +8,8 @@ Also see the [LeetCode/LintCode comparison table](https://www.1point3acres.com/b
 
 [Facebook and Google by tag](https://drive.google.com/drive/folders/17ONAjX4iJwK9ZKKRO0OqmVwI3nHTNAVh)
 
+[Facebook high freq 2020](https://www.1point3acres.com/bbs/thread-677169-1-1.html)
+
 ### **LeetCode 400 challenge record**
 Target date:2020-12-19, task: LeetCode 1-400
 Date|Problems|New Problems|To do/Review|Review Plan|LintCode progress|LeetCode 400 challenge
