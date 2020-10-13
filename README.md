@@ -3,7 +3,12 @@
 ## LintCode/LeetCode
 A new google doc is [here](https://docs.google.com/spreadsheets/d/1uuJLeRPIntMNEU8-5HU4z3KB6otjtLooAa_6JFf1E-Y/edit?usp=sharing)
 Also see the [LeetCode/LintCode comparison table](https://www.1point3acres.com/bbs/thread-453640-1-1.html)
+
 [LeetCode by company tag](https://github.com/youhusky/Leetcode_Company)
+
+[Facebook and Google by tag](https://drive.google.com/drive/folders/17ONAjX4iJwK9ZKKRO0OqmVwI3nHTNAVh)
+
+[Facebook high freq 2020](https://www.1point3acres.com/bbs/thread-677169-1-1.html)
 
 ### **LeetCode 400 challenge record**
 Target date:2020-12-19, task: LeetCode 1-400
