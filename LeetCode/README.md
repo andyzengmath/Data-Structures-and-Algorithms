@@ -1,0 +1,1 @@
+This folder is a collection of LeetCode problems which do not show up in the LintCode folder.
