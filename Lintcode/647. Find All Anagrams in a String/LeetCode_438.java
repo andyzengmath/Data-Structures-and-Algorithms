@@ -15,7 +15,7 @@ class LeetCode_438 {
             if (need.containsKey(ch)) {
                 window.put(ch, window.getOrDefault(ch, 0) + 1);
                 if (window.get(ch).compareTo(need.get(ch)) == 0) {
-                    valid++; //note: can't use ==
+                    valid++; //note: can't use == 用 compareTo() 比较，原因是自动装箱默认范围是 -128 -127，超过会创建新的对象，可以看下这个https://my.oschina.net/miwang/blog/730343
                 }
             }
             while (valid == need.size()) {
