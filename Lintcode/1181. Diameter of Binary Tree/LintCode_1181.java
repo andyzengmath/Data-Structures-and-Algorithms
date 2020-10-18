@@ -19,13 +19,13 @@ public class LintCode_1181 {
     public int diameterOfBinaryTree(TreeNode root) {
         // write your code 
         depth(root);
-        return maxLen - 1;
+        return maxLen;
     }
     private int depth(TreeNode root) {
         if (root == null) return 0;
         int L = depth(root.left);
-        int R = depth(node.right);
-        maxLen = Math.max(maxLen, L + R + 1);
+        int R = depth(root.right);
+        maxLen = Math.max(maxLen, L + R);
         return Math.max(L, R) + 1;
     }
 }
