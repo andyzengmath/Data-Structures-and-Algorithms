@@ -1,5 +1,5 @@
 public class LintCode_32 {
-    /** Leet-76
+    /** Leet-76 too tedious see leetcode version
      * @param source : A string
      * @param target: A string
      * @return: A string denote the minimum window, return "" if there is no such a string
