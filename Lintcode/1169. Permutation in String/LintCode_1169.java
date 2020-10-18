@@ -1,5 +1,5 @@
 public class LintCode_1169 {
-    /**
+    /**  Leet 567
      * @param s1: a string
      * @param s2: a string
      * @return: if s2 contains the permutation of s1
