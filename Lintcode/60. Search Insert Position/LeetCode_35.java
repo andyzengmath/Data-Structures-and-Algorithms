@@ -3,6 +3,9 @@ class LeetCode_35 {
         if (nums == null || nums.length == 0) {
             return -1;
         }
+        //if (nums[nums.length - 1] < target) {
+        //    return nums.length;
+        // }
         int left = 0, right = nums.length - 1;
         while (left <= right) {
             int mid = left + (right - left) / 2; // mid belongs to [left, mid] 
