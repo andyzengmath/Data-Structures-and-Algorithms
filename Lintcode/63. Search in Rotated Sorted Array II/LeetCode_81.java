@@ -1,5 +1,6 @@
 class LeetCode_81 {
     public boolean search(int[] nums, int target) {
+        // review 10-20-20
         if (nums == null || nums.length == 0) {
             return false;
         }
