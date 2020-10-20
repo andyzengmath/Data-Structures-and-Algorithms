@@ -12,7 +12,6 @@ public class LintCode_52 {
         
         while (i >= 0 && nums[i] >= nums[i + 1]) {
             i--;
-            
         }
         
         if (i >= 0) {
