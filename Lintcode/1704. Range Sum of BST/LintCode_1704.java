@@ -38,4 +38,27 @@ public class LintCode_1704 {
             }
         }
     }
+
+    // without global variable
+    public int rangeSumBST(TreeNode root, int L, int R) {
+        // dfs
+        int ans = dfs(root, L, R);
+        return ans;
+
+    }
+    public int dfs(TreeNode node, int L, int R) {
+        int total = 0;
+        if (node != null) {
+            if (node.val >= L && node.val <= R) {
+                total += node.val;
+            }
+            if (L < node.val) {
+                total += dfs(node.left, L, R);
+            }
+            if (R > node.val) {
+                total += dfs(node.right, L, R);
+            }
+        }
+        return total;
+    }
 }

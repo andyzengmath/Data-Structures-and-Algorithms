@@ -17,48 +17,25 @@ public class Solution {
      * @param R: an integer
      * @return: the sum
      */
-    int ans;
-    public int rangeSumBST(TreeNode root, int L, int R) {
-        // dfs
-        ans = 0;
-        dfs(root, L, R);
-        return ans;
 
-    }
-    public void dfs(TreeNode node, int L, int R) {
-        if (node != null) {
-            if (node.val >= L && node.val <= R) {
-                ans += node.val;
-            }
-            if (L < node.val) {
-                dfs(node.left, L, R);
-            }
-            if (R > node.val) {
-                dfs(node.right, L, R);
+    public int rangeSumBST(TreeNode root, int L, int R) {
+        int ans = 0;
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
+        while (!stack.isEmpty()) {
+            TreeNode node = stack.pop();
+            if (node != null) {
+                if (node.val >= L && node.val <= R) {
+                    ans += node.val;
+                }
+                if (L < node.val && node.left != null) {
+                    stack.push(node.left);
+                }
+                if (R > node.val && node.right != null) {
+                    stack.push(node.right);
+                }
             }
         }
-    }
-
-    // without global variable
-    public int rangeSumBST(TreeNode root, int L, int R) {
-        // dfs
-        int ans = dfs(root, L, R);
         return ans;
-
-    }
-    public int dfs(TreeNode node, int L, int R) {
-        int total = 0;
-        if (node != null) {
-            if (node.val >= L && node.val <= R) {
-                total += node.val;
-            }
-            if (L < node.val) {
-                total += dfs(node.left, L, R);
-            }
-            if (R > node.val) {
-                total += dfs(node.right, L, R);
-            }
-        }
-        return total;
     }
 }
