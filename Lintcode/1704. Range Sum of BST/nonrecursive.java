@@ -10,7 +10,7 @@
  * }
  */
 
-public class Solution {
+public class nonrecursive {
     /**
      * @param root: the root node
      * @param L: an integer
