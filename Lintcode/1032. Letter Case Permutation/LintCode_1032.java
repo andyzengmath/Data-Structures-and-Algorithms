@@ -5,7 +5,6 @@ public class LintCode_1032 {
      */
     public List<String> letterCasePermutation(String S) {
         // write your code here
-        StringBuilder sb = new StringBuilder();
         List<String> res = new ArrayList<>();
         char[] chArr= S.toCharArray();
         dfs(chArr, 0, res);
