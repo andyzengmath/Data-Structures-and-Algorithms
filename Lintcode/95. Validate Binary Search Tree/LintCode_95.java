@@ -1,5 +1,5 @@
 public class LintCode_95 {
-    /**
+    /** fast iterative slow
      * @param root: The root of binary tree.
      * @return: True if the binary tree is BST, or false
      */
