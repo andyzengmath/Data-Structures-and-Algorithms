@@ -15,7 +15,7 @@ public class LintCode_1181 {
      * @param root: a root of binary tree
      * @return: return a integer
      */
-    private int maxLen = 1;
+    private int maxLen = 0;
     public int diameterOfBinaryTree(TreeNode root) {
         // write your code 
         depth(root);
