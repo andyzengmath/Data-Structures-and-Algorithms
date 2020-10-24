@@ -2,10 +2,7 @@ class LeetCode_987 {
     // If two nodes have the same position, then the value of the node that is reported first is the value that is smaller.
     List<Location> locations;
     public List<List<Integer>> verticalTraversal(TreeNode root) {
-        // Each location is a node's x position, y position, and value
-        
-       
-        
+        // Each location is a node's x position, y position, and value   
         locations = new ArrayList<>();
         dfs(root, 0, 0);
         Collections.sort(locations);
