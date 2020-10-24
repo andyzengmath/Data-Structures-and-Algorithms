@@ -38,3 +38,28 @@ LeetCode_257 Solution {
         
     }
 }
+
+//simplified
+class Solution {
+    public List<String> binaryTreePaths(TreeNode root) {
+        // write your code here
+        List<String> paths = new ArrayList<>();
+        if (root == null) return paths;
+        dfs(root, "", paths);
+        return paths;
+    }
+    
+    public void dfs(TreeNode root, String s, List<String> paths) {
+        if (root != null) {
+            s += String.valueOf(root.val);
+            if (root.left == null && root.right == null) {
+                paths.add(s.toString());
+                return;
+            } else {
+                s += "->";
+                dfs(root.left, s, paths);
+                dfs(root.right, s, paths);
+            }
+        }
+    }
+}
