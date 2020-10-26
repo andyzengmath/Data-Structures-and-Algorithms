@@ -1,28 +1,22 @@
-public class LeetCode_90 {
-    /**  
-     * @param nums: A set of numbers.
-     * @return: A list of lists. All valid subsets.
-     */
+class LeetCode_90 {
     public List<List<Integer>> subsetsWithDup(int[] nums) {
-        // write your code here
-        List<List<Integer>> result = new ArrayList<>();
+        List<List<Integer>> res = new ArrayList<>();
+        if(nums.length == 0) return res;
+        List<Integer> path = new ArrayList<>(); // ArrayList faster than ArrayDeque
         Arrays.sort(nums);
-        ArrayDeque<Integer> subset = new ArrayDeque<>();
-        dfs(nums, 0, subset, result);
-        return result;
-
+        dfs(nums, 0, res, path);
+        return res;
     }
-
-    public void dfs(int[] nums, int k, ArrayDeque subset, List<List<Integer>> result) {
-        result.add(new ArrayList<>(subset));
-
-        for (int i = k; i < nums.length; i++) {
-            if (i > 0 && nums[i] == nums[i - 1]) {
+    private void dfs(int[] nums, int pos, List<List<Integer>> res, List<Integer> path) {
+        res.add(new ArrayList<>(path));
+        for (int i = pos; i < nums.length; i++) {
+            if (i != pos && nums[i] == nums[i - 1]) {
                 continue;
             }
-            subset.addLast(nums[i]);
-            dfs(nums, i + 1, subset, result);
-            subset.removeLast();
+            path.add(nums[i]);
+            dfs(nums, i + 1, res, path);
+            path.remove(path.size() - 1);
         }
+        
     }
 }
