@@ -1,5 +1,5 @@
 public class LintCode_414 {
-    /**
+    /** LeetCode 29 F review 10-26-20
      * @param dividend: the dividend
      * @param divisor: the divisor
      * @return: the result
@@ -13,7 +13,7 @@ public class LintCode_414 {
         }
 
         long ans = 0;
-        long dividend1 = Math.abs((long) dividend);
+        long dividend1 = Math.abs((long) dividend); // note here we want to transform to abs
         long divisor1 = Math.abs((long) divisor);
         while (dividend1 >= divisor1) {
             long temp = divisor1;
