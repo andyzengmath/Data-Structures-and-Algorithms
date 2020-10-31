@@ -22,7 +22,7 @@ public class dfs {
     }
 
     private void dfs(TreeNode root, List<Integer> level, int curLevel, int maxLevel) {
-        if (root == null ||| curLevel > maxLevel) {
+        if (root == null || curLevel > maxLevel) {
             return;
         }
         if (curLevel == maxLevel) {
@@ -30,6 +30,6 @@ public class dfs {
             return;
         }
         dfs(root.left, level, curLevel + 1, maxLevel);
-        dfs(root.right, level, curLevel + 1, maxLeverl);
+        dfs(root.right, level, curLevel + 1, maxLevel);
     }
 }
