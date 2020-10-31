@@ -17,5 +17,12 @@ public class Solution {
      */
     public boolean isSymmetric(TreeNode root) {
         // Write your code here
+        return isMirror(root, root);
+    }
+    
+    public boolean isMirror(TreeNode r1, TreeNode r2) {
+        if (r1 == null && r2 == null) return true;
+        if (r1 == null || r2 == null) return false;
+        return r1.val == r2.val && isMirror(r1.right, r2.left) && isMirror(r2.right, r1.left);
     }
 }
