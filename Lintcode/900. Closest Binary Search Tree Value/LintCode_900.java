@@ -17,7 +17,7 @@ public class LintCode_900 {
      * @return: the value in the BST that is closest to the target
      */
     public int closestValue(TreeNode root, double target) {
-        // write your code here
+        // use inorder traversal
         LinkedList<TreeNode> stack = new LinkedList<>();
         long pred = Long.MIN_VALUE;
 
