@@ -4,7 +4,7 @@ public class LintCode_513 {
      * @return: An integer
      */
     public int numSquares(int n) {
-        // write your code here
+        // DP cannot pass lintcode
         int[] dp = new int[n + 1];
         for (int i = 0; i <= 0; i++) {
             dp[i] = 0;
