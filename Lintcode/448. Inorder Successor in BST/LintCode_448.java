@@ -10,7 +10,8 @@
 
 
 public class LintCode_448 {
-    /*
+    /* Leet 285
+    
      * @param root: The root of the BST.
      * @param p: You need find the successor node of p.
      * @return: Successor of p.
