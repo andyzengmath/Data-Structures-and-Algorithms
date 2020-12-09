@@ -3,12 +3,14 @@ public class LintCode_1300 {
      * @param n: an integer
      * @return: whether you can win the game given the number of stones in the heap
      */
+
+     // memoization search: stackoverflow
     public boolean canWinBash(int n) {
         // Write your code here
         return memoSearch(n, new HashMap<>());
     }
 
-    private boolean momoSearch(int n, Map<Integer, Boolean> memo) {
+    private boolean memoSearch(int n, Map<Integer, Boolean> memo) {
         if (n <= 3) return true;
 
         if (memo.containsKey(n)) {
@@ -16,7 +18,7 @@ public class LintCode_1300 {
         }
 
         for (int i = 1; i <= 3; i++) {
-            if (!memoSearch(n - i), memo)) {
+            if (!memoSearch(n - i, memo)) {
                 memo.put(n, true);
                 return true;
             }
@@ -25,6 +27,7 @@ public class LintCode_1300 {
     }
 }
 
+// dp: time exceeded
 public boolean canWinBash(int n) {
     // Write your code here
     if (n <= 3) return true;
