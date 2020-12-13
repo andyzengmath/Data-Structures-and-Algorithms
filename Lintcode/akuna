@@ -1,0 +1,63 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    static Random rand = new Random();
+    
+    public int simulation(int m, int n) {
+        int totalSuccess = 0;
+        for (int i = 0; i < m; i++) {
+            boolean success = drunkPassenger(n);
+            if (success) {
+                totalSuccess++;
+            }
+        }
+        return totalSuccess / m;
+    }
+    
+    
+    static boolean drunkPassenger(int n) {
+        int wrongSeat = rand.nextInt(n);
+        int totalSeated = 1;
+        HashMap<Integer, Integer> seats = new HashMap<Integer, Integer>();
+        
+        boolean[] seated = new boolean[n];
+        for (boolean seat: seated) {
+            seat = false;
+        }
+        seated[wrongSeat] = true;
+        
+        
+        for (int i = 1; i < n; i++) {
+            if (seated[i] == false) {
+                seated[i] = true;
+                seats.set(i, i);
+            } else {
+                while (true) {
+                    int randomSeat = rand.nextInt(n);
+                    if (seated[randomSeat] == false) {
+                        seated[randomSeat] = true;
+                    } else {
+                        continue;
+                    }
+                    seats.set(i, randomSeat);
+                }
+            }
+        }
+        return seats.get(n - 1) == n - 1;
+   }
+
+ public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a;
+        a = in.nextInt();
+        int b;
+        b = in.nextInt();
+        int sum;
+
+        
+   }
+}
