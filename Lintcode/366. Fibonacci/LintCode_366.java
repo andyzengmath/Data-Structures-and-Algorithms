@@ -1,5 +1,5 @@
 public class LintCode_366 {
-    /**
+    /** can't pass leet
      * @param n: an integer
      * @return: an integer f(n)
      */
