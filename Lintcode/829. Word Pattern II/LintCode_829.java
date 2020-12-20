@@ -13,7 +13,7 @@ public class LintCode_829 {
 
     private boolean isMatch(String pattern, String str, Map<Character, Character> mapping, Set<String> used) {
         if (pattern.length() == 0) {
-            return str.length() ==0;
+            return str.length() == 0;
         }
 
         Char ch = pattern.charAt(0);
