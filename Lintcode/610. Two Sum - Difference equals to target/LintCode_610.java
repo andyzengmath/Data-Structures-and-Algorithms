@@ -1,5 +1,6 @@
 class LintCode_610 {
     // locked 
+    // two pointer, optimize the binary search version
     public int[] twoSum7(int[] nums, int target) {
         if (nums == null || nums.length < 2) {
             return new int[]{-1, -1};
