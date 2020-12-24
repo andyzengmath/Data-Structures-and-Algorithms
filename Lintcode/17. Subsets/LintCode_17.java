@@ -49,4 +49,24 @@ public class LintCode_17 {
         }
         return queue;
     }
+
+    // BFS 2 slower
+    public List<List<Integer>> subsets(int[] nums) {
+        if (nums == null) {
+            return new ArrayList<>();
+        }
+        List<List<Integer>> queue = new ArrayList<>();
+        queue.add(new LinkedList<Integer>());
+        Arrays.sort(nums);
+
+        for (int num: nums) {
+            int size = queue.size();
+            for (int i = 0; i < size; i++) {
+                List<Integer> subset = new ArrayList<>(queue.get(i));
+                subset.add(num);
+                queue.add(subset);
+            }
+        }
+        return queue;
+    }
 }
