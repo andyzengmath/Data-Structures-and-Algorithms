@@ -25,4 +25,52 @@ class LeetCode_46 {
         }
         
     }
+
+    // Jiuzhang use Next Permutation 
+    public List<List<Integer>> permute(int[] nums) {
+        Arrays.sort(nums);
+        List<List<Integer>> result = new ArrayList<>();
+
+        boolean next = true;
+        while (next) {
+            List<Integer> current = new ArrayList<>();
+            for (int num: nums) {
+                current.add(num);
+            }
+            result.add(current);
+            next = nextPermutation(nums);
+        }
+        return result;
+    }
+
+    public void swapItem(int[] nums, int i, int j) {
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+    }
+
+    public void swapList(int[] nums, int i, int j) {
+        while (i < j) {
+            swapItem(nums, i, j);
+            i++;
+            j--;
+        }
+    }
+
+    public boolean nextPermutation(int[] nums) {
+        int len = nums.length;
+        int i = len - 1;
+        while (i > 0 && nums[i] <= nums[i - 1]) {
+            i--;
+        }
+        if (i <= 0) return false;
+        int j = len - 1;
+        while (nums[j] <= nums[i - 1]) {
+            j--;
+        }
+        swapItem(nums, j, i - 1);
+        swapList(nums, i, len - 1);
+
+        return true;
+    }
 }
