@@ -14,9 +14,7 @@ public class LintCode_12 {
      */
     public void push(int number) {
         // write your code here
-        if (min.isEmpty()) {
-            min.push(number);
-        } else if (number <= min.peek()) {
+        if (min.isEmpty() || number <= min.peek()) {
             min.push(number);
         }
         main.push(number);
