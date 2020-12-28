@@ -1,8 +1,8 @@
 public class LintCode_33 {
-    /*
+    /* Leet 93%
      * @param n: The number of queens
      * @return: All distinct solutions
-     */
+     */ 
     private int n;
     private boolean[] col;
     private boolean[] sub;
