@@ -1,5 +1,5 @@
 public class LintCode_168 {
-    /**
+    /** slow!!!
      * @param nums: A list of integer
      * @return: An integer, maximum coins
      */
