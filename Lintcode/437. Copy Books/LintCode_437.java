@@ -60,7 +60,7 @@ public class LintCode_437 {
             prefixSum[i] = prefixSum[i - 1] + pages[i - 1];
         }
         int[][] dp = new int[n + 1][k + 1];
-
+        
         for (int i = 1; i <= n; i++) {
             dp[i][0] = Integer.MAX_VALUE;
         }
