@@ -43,4 +43,52 @@ public class LintCode_602 {
         return end + 1;
         
     }
+
+
+    // better 
+    public int maxEnvelopes(int[][] envelopes) {
+        if (envelopes == null || envelopes.length == 0) {
+            return 0;
+        }
+        Arrays.sort(envelopes, new Comparator<int[]>(){
+            public int compare(int[] arr1, int[] arr2) {
+                if (arr1[0] == arr2[0]) {
+                    return arr2[1] - arr1[1];
+                } else {
+                    return arr1[0] - arr2[0];
+                }
+            }
+        });
+        
+        int n = envelopes.length;
+        int[] lis = new int[n + 1];
+        lis[0] = Integer.MIN_VALUE;
+        for (int i = 1; i <= n; i++) {
+            lis[i] = Integer.MAX_VALUE;
+        }
+        int longest = 0;
+        for (int i = 0; i < n; i++) {
+            int index = firstGTE(lis, envelopes[i][1]);
+            lis[index] = envelopes[i][1];
+            longest = Math.max(longest, index);
+        }
+        return longest;
+    }
+    
+    private int firstGTE(int[] nums, int target) {
+        int start = 0, end = nums.length - 1;
+        while (start + 1 < end) {
+            int mid = start + (end - start) / 2;
+            if (nums[mid] >= target) {
+                end = mid;
+            } else {
+                start = mid;
+            }
+        }
+        if (nums[start] >= target) {
+            return start;
+        } else {
+            return end;
+        }
+    }
 }
