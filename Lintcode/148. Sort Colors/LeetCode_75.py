@@ -9,11 +9,11 @@ class LeetCode_75:
             if nums[index] == 0:
                 nums[index], nums[left] = nums[left], nums[index]
                 left += 1
-                index += 1
+                index += 1 # move to next number
             elif nums[index] == 2:
                 nums[index], nums[right] = nums[right], nums[index]
                 right -= 1
-            else:
+            else: # == 1, skip
                 index += 1
                 
         
