@@ -4,7 +4,7 @@ class LeetCode_75:
         Do not return anything, modify nums in-place instead.
         """
         index, left, right = 0, 0 , len(nums) - 1
-        
+        # be careful, index < right is not correct
         while (index <= right):
             if nums[index] == 0:
                 nums[index], nums[left] = nums[left], nums[index]
