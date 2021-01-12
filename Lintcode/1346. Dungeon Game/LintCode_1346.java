@@ -45,6 +45,7 @@ public class LintCode_1346 {
             Arrays.fill(dp[i], Integer.MAX_VALUE);
         }
         dp[n][m - 1] = dp[n - 1][m] = 1;
+        // last row and column are invalid values
         for (int i = n - 1; i >= 0; i--) {
             for (int j = m - 1; j >= 0; j--) {
                 int minn = Math.min(dp[i + 1][j], dp[i][j + 1]);
